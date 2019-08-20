@@ -1,13 +1,10 @@
-[     0.000071] Starting file scan.
-[     6.508892] Completed file scan.
-
 [+] ARB_timer (top)
   Architectures:
   {+} fsm
   {+} arch
     Subcomponent hierarchy:
   Instantiated as:
-[+] ARB_trigger 
+[+] ARB_trigger
   Architectures:
   {+} fsm
     Subcomponent hierarchy:
@@ -15,7 +12,7 @@
   > ARB_trigger_1 in pulse_timer (struct) (struct)
   > ARB_trigger_1 in tacan_freq_gen_tb (behavioral)
   > U_21 in pulse_timer (struct) (struct)
-[+] ATC_reply 
+[+] ATC_reply
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -23,7 +20,7 @@
   > DUT in ATC_reply_tb (testbench)
   > ATC_REPLY_DETECTOR in pulse_decoder (rtl) (rtl)
   > ATC_REPLY_DETECTOR in pulse_decoder (rtl) (rtl)
-[+] ATC_reply_old 
+[+] ATC_reply_old
   Instantiated as:
   > DUT_OLD in ATC_reply_tb (testbench)
 [+] ATC_reply_tb (top)
@@ -31,16 +28,16 @@
   {+} testbench
     Subcomponent hierarchy:
     |-> DUT: ATC_reply  (rtl)
-    |-> DUT_OLD: ATC_reply_old 
+    |-> DUT_OLD: ATC_reply_old
   Instantiated as:
-[+] ATCwindow 
+[+] ATCwindow
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
   Instantiated as:
   > ATC_WINDOW in pulse_decoder (rtl) (rtl)
   > ATC_WINDOW in pulse_decoder (rtl) (rtl)
-[+] Average_GenericSized 
+[+] Average_GenericSized
   Instantiated as:
   > Detect_Analog_Avg in adc_control (rtl)
   > Pulse_Width_Avg in adc_control (rtl)
@@ -48,7 +45,7 @@
   > Pulse_Width_Noise_Avg in adc_control (rtl)
   > Pulse_Freq_Noise_Avg in adc_control (rtl)
   > VCO_Noise_Avg in adc_control (rtl)
-[+] AxiBurstType 
+[+] AxiBurstType
   Instantiated as:
   > burst_type_decode in altera_merlin_address_alignment
   > burst_type_decode in altera_merlin_axi_master_ni
@@ -56,7 +53,7 @@
   > burst_type_decode in altera_merlin_address_alignment
   > burst_type_decode in altera_merlin_axi_master_ni
   > burst_type_decode in altera_merlin_address_alignment
-[+] CIC_DEC 
+[+] CIC_DEC
   Architectures:
   {+} arch
     Subcomponent hierarchy:
@@ -68,7 +65,7 @@
   {+} arch
     Subcomponent hierarchy:
   Instantiated as:
-[+] CORDIC_P2R 
+[+] CORDIC_P2R
   Architectures:
   {+} arch
     Subcomponent hierarchy:
@@ -83,7 +80,7 @@
     Subcomponent hierarchy:
     |-> DUT: CORDIC_P2R  (arch)
   Instantiated as:
-[+] CORDIC_R2P 
+[+] CORDIC_R2P
   Architectures:
   {+} arch
     Subcomponent hierarchy:
@@ -98,7 +95,7 @@
     Subcomponent hierarchy:
     |-> DUT: CORDIC_R2P  (arch)
   Instantiated as:
-[+] DataDelay128 
+[+] DataDelay128
   Architectures:
   {+} struct
     Subcomponent hierarchy:
@@ -117,27 +114,27 @@
     |-> I0: DataDelay128  (struct)
     |-> I1: DataDelay128_tester  (imp)
   Instantiated as:
-[+] DataDelay128_tester 
+[+] DataDelay128_tester
   Architectures:
   {+} imp
     Subcomponent hierarchy:
   Instantiated as:
   > I1 in DataDelay128_tb (behavioral) (struct)
-[+] HBF 
+[+] HBF
   Architectures:
   {+} arch
     Subcomponent hierarchy:
   Instantiated as:
   > HALF_BAND_FILT in rx_dsp_top (rtl)
   > HALF_BAND_FILT in uat_rx_demod (rtl)
-[+] IQ_DDS 
+[+] IQ_DDS
   Architectures:
   {+} arch
     Subcomponent hierarchy:
     |-> ROM_A: IQ_DDS_ROM  (arch) (arch) (sim)
   Instantiated as:
   > U_1 in quadrature_mixer (arch)
-[+] IQ_DDS_ROM 
+[+] IQ_DDS_ROM
   Architectures:
   {+} arch
   {+} arch
@@ -151,7 +148,7 @@
   {+} arch
     Subcomponent hierarchy:
   Instantiated as:
-[+] MRB_trigger 
+[+] MRB_trigger
   Architectures:
   {+} fsm
     Subcomponent hierarchy:
@@ -159,14 +156,14 @@
   > MRB_trigger_1 in pulse_timer (struct) (struct)
   > MRB_trigger_1 in tacan_freq_gen_tb (behavioral)
   > U_20 in pulse_timer (struct) (struct)
-[+] RMII2MII_rev2 
+[+] RMII2MII_rev2
   Architectures:
   {+} arch_RMII2MII_rev2
     Subcomponent hierarchy:
   Instantiated as:
   > RMII2MII_rev2_2 in firefly_fpga_top (rtl)
   > RMII2MII_rev2_1 in firefly_fpga_top (rtl)
-[+] SCF 
+[+] SCF
   Architectures:
   {+} arch
     Subcomponent hierarchy:
@@ -174,14 +171,14 @@
   > SCF_FILT in rx_dsp_top (rtl)
   > SCF_FILT in rx_dsp_top_lf (rtl)
   > SCF_FILT in uat_rx_demod (rtl)
-[+] VCO_Freq_Processor 
+[+] VCO_Freq_Processor
   Instantiated as:
   > VCO_Freq_Proc in adc_control (rtl)
-[+] a10_hps_emif_interface 
+[+] a10_hps_emif_interface
   Instantiated as:
   > emif_interface in hps_platform_altera_arria10_interface_generator_140_v2xnp4q
   > emif_interface in hps_platform_altera_arria10_interface_generator_140_vassg6i
-[+] ad7689_driver 
+[+] ad7689_driver
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -201,17 +198,17 @@
     Subcomponent hierarchy:
     |-> DUT: ad7689_driver  (rtl)
   Instantiated as:
-[+] adc_control 
+[+] adc_control
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
-    |-> Detect_Analog_Avg: Average_GenericSized 
-    |-> Pulse_Width_Avg: Average_GenericSized 
-    |-> Pulse_Freq_Avg: Average_GenericSized 
-    |-> Pulse_Width_Noise_Avg: Average_GenericSized 
-    |-> Pulse_Freq_Noise_Avg: Average_GenericSized 
-    |-> VCO_Freq_Proc: VCO_Freq_Processor 
-    |-> VCO_Noise_Avg: Average_GenericSized 
+    |-> Detect_Analog_Avg: Average_GenericSized
+    |-> Pulse_Width_Avg: Average_GenericSized
+    |-> Pulse_Freq_Avg: Average_GenericSized
+    |-> Pulse_Width_Noise_Avg: Average_GenericSized
+    |-> Pulse_Freq_Noise_Avg: Average_GenericSized
+    |-> VCO_Freq_Proc: VCO_Freq_Processor
+    |-> VCO_Noise_Avg: Average_GenericSized
   Instantiated as:
   > DUT in adc_control_tb (functional)
 [+] adc_control_tb (top)
@@ -220,17 +217,17 @@
     Subcomponent hierarchy:
     |-> DUT: adc_control  (rtl)
   Instantiated as:
-[+] adc_data_in 
+[+] adc_data_in
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
-    |-> gpio_0: adc_data_in_altera_gpio_181_x77pbgi 
+    |-> gpio_0: adc_data_in_altera_gpio_181_x77pbgi
   Instantiated as:
   > adc_data_in_1 in firefly_fpga_top (rtl)
-[+] adc_data_in_altera_gpio_181_x77pbgi 
+[+] adc_data_in_altera_gpio_181_x77pbgi
   Instantiated as:
   > gpio_0 in adc_data_in (rtl)
-[+] add_sub 
+[+] add_sub
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -239,7 +236,7 @@
   > combs in decimation_cic (rtl)
   > combs in interpolation_cic (rtl)
   > integrators in interpolation_cic (rtl)
-[+] alentar 
+[+] alentar
   Instantiated as:
   > wdata_alen in twentynm_hps_rl_interface_fpga2hps
   > awaddr_alen in twentynm_hps_rl_interface_fpga2hps
@@ -331,16 +328,16 @@
   > b_ready_alen in f2s_rl_delay_adp
   > w_strb_alen in f2s_rl_delay_adp
   > _w_valid_alen in f2s_rl_delay_adp
-[+] altera_arria10_chip_id 
+[+] altera_arria10_chip_id
   Instantiated as:
   > arria10_chip_id_0 in hps_platform_system_info_subsys_10_siwlkji (rtl)
   > arria10_chip_id_0 in hps_platform_system_info_subsys_10_ieibhaa (rtl)
-[+] altera_avalon_mm_bridge 
+[+] altera_avalon_mm_bridge
   Instantiated as:
   > discrete_avl_mm in hps_platform (rtl) (rtl) (rtl)
   > discrete_avl_mm in hps_platform (rtl) (rtl) (rtl)
   > mm_bridge_0 in hps_platform_system_info_subsys_10_siwlkji (rtl)
-[+] altera_avalon_sc_fifo 
+[+] altera_avalon_sc_fifo
   Instantiated as:
   > dest_id_fifo in altera_merlin_traffic_limiter
   > measurement_fifo_0_csm_port_agent_rsp_fifo in hps_platform_altera_mm_interconnect_181_4jcth3q
@@ -373,31 +370,31 @@
   > system_info_subsys_mm_slave_agent_rdata_fifo in hps_platform_altera_mm_interconnect_180_kxr6xra
   > ads4129_spi_spi_control_port_agent_rsp_fifo in hps_platform_altera_mm_interconnect_180_kxr6xra
   > ads4129_spi_spi_control_port_agent_rdata_fifo in hps_platform_altera_mm_interconnect_180_kxr6xra
-[+] altera_avalon_st_clock_crosser 
+[+] altera_avalon_st_clock_crosser
   Instantiated as:
   > clock_xer in altera_avalon_st_handshake_clock_crosser
-[+] altera_avalon_st_handshake_clock_crosser 
+[+] altera_avalon_st_handshake_clock_crosser
   Instantiated as:
   > crosser in hps_platform_altera_mm_interconnect_181_4jcth3q
   > crosser_001 in hps_platform_altera_mm_interconnect_181_4jcth3q
   > crosser_002 in hps_platform_altera_mm_interconnect_181_4jcth3q
   > crosser_003 in hps_platform_altera_mm_interconnect_181_4jcth3q
-[+] altera_avalon_st_pipeline_base 
+[+] altera_avalon_st_pipeline_base
   Instantiated as:
   > output_stage in altera_avalon_st_clock_crosser
   > core in altera_avalon_st_pipeline_stage
   > stage1_pipe in altera_merlin_traffic_limiter
   > core in altera_avalon_st_pipeline_stage
   > stage1_pipe in altera_merlin_traffic_limiter
-[+] altera_avalon_st_pipeline_stage 
+[+] altera_avalon_st_pipeline_stage
   Instantiated as:
   > input_pipe in altera_merlin_burst_adapter_new
   > input_pipe in altera_merlin_burst_adapter_new
-[+] altera_chip_id_a10 
+[+] altera_chip_id_a10
   Instantiated as:
   > altchip_id_a10_inst in altera_arria10_chip_id
   > altchip_id_a10_inst in altera_arria10_chip_id
-[+] altera_default_burst_converter 
+[+] altera_default_burst_converter
   Instantiated as:
   > the_default_burst_converter in altera_merlin_burst_adapter_new
   > the_default_burst_converter in altera_merlin_burst_adapter_new
@@ -409,65 +406,19 @@
   > the_default_burst_converter in altera_merlin_burst_adapter_new
   > the_default_burst_converter in altera_merlin_burst_adapter_new
   > the_default_burst_converter in altera_merlin_burst_adapter_new
-[+] altera_emif_arch_nf_abphy_mux 
+[+] altera_emif_arch_nf_abphy_mux
   Instantiated as:
   > altera_emif_arch_nf_abphy_mux_inst in altera_emif_arch_nf_io_tiles_wrap
   > altera_emif_arch_nf_abphy_mux_inst in altera_emif_arch_nf_io_tiles_wrap
-[+] altera_emif_arch_nf_afi_if 
+[+] altera_emif_arch_nf_afi_if
   Instantiated as:
   > if_inst in hps_platform_altera_emif_arch_nf_181_l74jv7y_top
   > if_inst in hps_platform_altera_emif_arch_nf_180_zngiyoi_top
-[+] altera_emif_arch_nf_buf_bdir_df 
+[+] altera_emif_arch_nf_buf_bdir_df
   Instantiated as:
   > b in altera_emif_arch_nf_bufs
   > b in altera_emif_arch_nf_bufs
-[+] altera_emif_arch_nf_buf_bdir_se 
-  Instantiated as:
-  > b in altera_emif_arch_nf_bufs
-  > b in altera_emif_arch_nf_bufs
-  > b in altera_emif_arch_nf_bufs
-  > b in altera_emif_arch_nf_bufs
-  > b in altera_emif_arch_nf_bufs
-  > b in altera_emif_arch_nf_bufs
-  > b in altera_emif_arch_nf_bufs
-  > b in altera_emif_arch_nf_bufs
-  > b in altera_emif_arch_nf_bufs
-  > b in altera_emif_arch_nf_bufs
-  > b in altera_emif_arch_nf_bufs
-  > b in altera_emif_arch_nf_bufs
-[+] altera_emif_arch_nf_buf_udir_cp_i 
-  Instantiated as:
-  > b in altera_emif_arch_nf_bufs
-  > b in altera_emif_arch_nf_bufs
-[+] altera_emif_arch_nf_buf_udir_df_i 
-  Instantiated as:
-  > b in altera_emif_arch_nf_bufs
-  > b in altera_emif_arch_nf_bufs
-  > b in altera_emif_arch_nf_bufs
-  > b in altera_emif_arch_nf_bufs
-  > b in altera_emif_arch_nf_bufs
-  > b in altera_emif_arch_nf_bufs
-[+] altera_emif_arch_nf_buf_udir_df_o 
-  Instantiated as:
-  > b in altera_emif_arch_nf_bufs
-  > b in altera_emif_arch_nf_bufs
-  > b in altera_emif_arch_nf_bufs
-  > b in altera_emif_arch_nf_bufs
-  > b in altera_emif_arch_nf_bufs
-  > b in altera_emif_arch_nf_bufs
-  > b in altera_emif_arch_nf_bufs
-  > b in altera_emif_arch_nf_bufs
-  > b in altera_emif_arch_nf_bufs
-  > b in altera_emif_arch_nf_bufs
-[+] altera_emif_arch_nf_buf_udir_se_i 
-  Instantiated as:
-  > b in altera_emif_arch_nf_bufs
-  > b in altera_emif_arch_nf_bufs
-  > b in altera_emif_arch_nf_bufs
-  > b in altera_emif_arch_nf_bufs
-  > b in altera_emif_arch_nf_bufs
-  > b in altera_emif_arch_nf_bufs
-[+] altera_emif_arch_nf_buf_udir_se_o 
+[+] altera_emif_arch_nf_buf_bdir_se
   Instantiated as:
   > b in altera_emif_arch_nf_bufs
   > b in altera_emif_arch_nf_bufs
@@ -481,6 +432,40 @@
   > b in altera_emif_arch_nf_bufs
   > b in altera_emif_arch_nf_bufs
   > b in altera_emif_arch_nf_bufs
+[+] altera_emif_arch_nf_buf_udir_cp_i
+  Instantiated as:
+  > b in altera_emif_arch_nf_bufs
+  > b in altera_emif_arch_nf_bufs
+[+] altera_emif_arch_nf_buf_udir_df_i
+  Instantiated as:
+  > b in altera_emif_arch_nf_bufs
+  > b in altera_emif_arch_nf_bufs
+  > b in altera_emif_arch_nf_bufs
+  > b in altera_emif_arch_nf_bufs
+  > b in altera_emif_arch_nf_bufs
+  > b in altera_emif_arch_nf_bufs
+[+] altera_emif_arch_nf_buf_udir_df_o
+  Instantiated as:
+  > b in altera_emif_arch_nf_bufs
+  > b in altera_emif_arch_nf_bufs
+  > b in altera_emif_arch_nf_bufs
+  > b in altera_emif_arch_nf_bufs
+  > b in altera_emif_arch_nf_bufs
+  > b in altera_emif_arch_nf_bufs
+  > b in altera_emif_arch_nf_bufs
+  > b in altera_emif_arch_nf_bufs
+  > b in altera_emif_arch_nf_bufs
+  > b in altera_emif_arch_nf_bufs
+[+] altera_emif_arch_nf_buf_udir_se_i
+  Instantiated as:
+  > b in altera_emif_arch_nf_bufs
+  > b in altera_emif_arch_nf_bufs
+  > b in altera_emif_arch_nf_bufs
+  > b in altera_emif_arch_nf_bufs
+  > b in altera_emif_arch_nf_bufs
+  > b in altera_emif_arch_nf_bufs
+[+] altera_emif_arch_nf_buf_udir_se_o
+  Instantiated as:
   > b in altera_emif_arch_nf_bufs
   > b in altera_emif_arch_nf_bufs
   > b in altera_emif_arch_nf_bufs
@@ -531,7 +516,19 @@
   > b in altera_emif_arch_nf_bufs
   > b in altera_emif_arch_nf_bufs
   > b in altera_emif_arch_nf_bufs
-[+] altera_emif_arch_nf_buf_unused 
+  > b in altera_emif_arch_nf_bufs
+  > b in altera_emif_arch_nf_bufs
+  > b in altera_emif_arch_nf_bufs
+  > b in altera_emif_arch_nf_bufs
+  > b in altera_emif_arch_nf_bufs
+  > b in altera_emif_arch_nf_bufs
+  > b in altera_emif_arch_nf_bufs
+  > b in altera_emif_arch_nf_bufs
+  > b in altera_emif_arch_nf_bufs
+  > b in altera_emif_arch_nf_bufs
+  > b in altera_emif_arch_nf_bufs
+  > b in altera_emif_arch_nf_bufs
+[+] altera_emif_arch_nf_buf_unused
   Instantiated as:
   > ub in altera_emif_arch_nf_bufs
   > ub0 in altera_emif_arch_nf_bufs
@@ -637,67 +634,67 @@
   > ub1 in altera_emif_arch_nf_bufs
   > ub0 in altera_emif_arch_nf_bufs
   > ub1 in altera_emif_arch_nf_bufs
-[+] altera_emif_arch_nf_bufs 
+[+] altera_emif_arch_nf_bufs
   Instantiated as:
   > bufs_inst in hps_platform_altera_emif_arch_nf_181_l74jv7y_top
   > bufs_inst in hps_platform_altera_emif_arch_nf_180_zngiyoi_top
-[+] altera_emif_arch_nf_core_clks_rsts 
+[+] altera_emif_arch_nf_core_clks_rsts
   Instantiated as:
   > core_clks_rsts_inst in hps_platform_altera_emif_arch_nf_181_l74jv7y_top
   > core_clks_rsts_inst in hps_platform_altera_emif_arch_nf_180_zngiyoi_top
-[+] altera_emif_arch_nf_hmc_amm_data_if 
+[+] altera_emif_arch_nf_hmc_amm_data_if
   Instantiated as:
   > data_if_inst in hps_platform_altera_emif_arch_nf_181_l74jv7y_top
   > data_if_inst in hps_platform_altera_emif_arch_nf_180_zngiyoi_top
-[+] altera_emif_arch_nf_hmc_ast_data_if 
+[+] altera_emif_arch_nf_hmc_ast_data_if
   Instantiated as:
   > data_if_inst in hps_platform_altera_emif_arch_nf_181_l74jv7y_top
   > data_if_inst in hps_platform_altera_emif_arch_nf_180_zngiyoi_top
-[+] altera_emif_arch_nf_hmc_avl_if 
+[+] altera_emif_arch_nf_hmc_avl_if
   Instantiated as:
   > hmc_avl_if_inst in hps_platform_altera_emif_arch_nf_181_l74jv7y_top
   > hmc_avl_if_inst in hps_platform_altera_emif_arch_nf_180_zngiyoi_top
-[+] altera_emif_arch_nf_hmc_mmr_if 
+[+] altera_emif_arch_nf_hmc_mmr_if
   Instantiated as:
   > hmc_mmr_if_inst in hps_platform_altera_emif_arch_nf_181_l74jv7y_top
   > hmc_mmr_if_inst in hps_platform_altera_emif_arch_nf_180_zngiyoi_top
-[+] altera_emif_arch_nf_hmc_sideband_if 
+[+] altera_emif_arch_nf_hmc_sideband_if
   Instantiated as:
   > hmc_sideband_if_inst in hps_platform_altera_emif_arch_nf_181_l74jv7y_top
   > hmc_sideband_if_inst in hps_platform_altera_emif_arch_nf_180_zngiyoi_top
-[+] altera_emif_arch_nf_hps_clks_rsts 
+[+] altera_emif_arch_nf_hps_clks_rsts
   Instantiated as:
   > hps_clks_rsts_inst in hps_platform_altera_emif_arch_nf_181_l74jv7y_top
   > hps_clks_rsts_inst in hps_platform_altera_emif_arch_nf_180_zngiyoi_top
-[+] altera_emif_arch_nf_io_tiles 
+[+] altera_emif_arch_nf_io_tiles
   Instantiated as:
   > io_tiles_inst in altera_emif_arch_nf_io_tiles_wrap
   > io_tiles_inst in altera_emif_arch_nf_io_tiles_wrap
-[+] altera_emif_arch_nf_io_tiles_abphy 
+[+] altera_emif_arch_nf_io_tiles_abphy
   Instantiated as:
   > io_tiles_abphy_inst in altera_emif_arch_nf_io_tiles_wrap
   > io_tiles_abphy_inst in altera_emif_arch_nf_io_tiles_wrap
-[+] altera_emif_arch_nf_io_tiles_wrap 
+[+] altera_emif_arch_nf_io_tiles_wrap
   Instantiated as:
   > io_tiles_wrap_inst in hps_platform_altera_emif_arch_nf_181_l74jv7y_top
   > io_tiles_wrap_inst in hps_platform_altera_emif_arch_nf_180_zngiyoi_top
-[+] altera_emif_arch_nf_oct 
+[+] altera_emif_arch_nf_oct
   Instantiated as:
   > oct_inst in hps_platform_altera_emif_arch_nf_181_l74jv7y_top
   > oct_inst in hps_platform_altera_emif_arch_nf_180_zngiyoi_top
-[+] altera_emif_arch_nf_pll 
+[+] altera_emif_arch_nf_pll
   Instantiated as:
   > pll_inst in hps_platform_altera_emif_arch_nf_181_l74jv7y_top
   > pll_inst in hps_platform_altera_emif_arch_nf_180_zngiyoi_top
-[+] altera_emif_arch_nf_pll_extra_clks 
+[+] altera_emif_arch_nf_pll_extra_clks
   Instantiated as:
   > pll_extra_clks_inst in hps_platform_altera_emif_arch_nf_181_l74jv7y_top
   > pll_extra_clks_inst in hps_platform_altera_emif_arch_nf_180_zngiyoi_top
-[+] altera_emif_arch_nf_pll_fast_sim 
+[+] altera_emif_arch_nf_pll_fast_sim
   Instantiated as:
   > pll_inst in hps_platform_altera_emif_arch_nf_181_l74jv7y_top
   > pll_inst in hps_platform_altera_emif_arch_nf_180_zngiyoi_top
-[+] altera_emif_arch_nf_regs 
+[+] altera_emif_arch_nf_regs
   Instantiated as:
   > afi_rrank_regs in altera_emif_arch_nf_afi_if
   > afi_wrank_regs in altera_emif_arch_nf_afi_if
@@ -743,23 +740,23 @@
   > afi_cal_fail_regs in altera_emif_arch_nf_seq_if
   > oct_cal_req_regs in altera_emif_arch_nf_seq_if
   > oct_s2pload_ena_regs in altera_emif_arch_nf_seq_if
-[+] altera_emif_arch_nf_seq_if 
+[+] altera_emif_arch_nf_seq_if
   Instantiated as:
   > seq_if_inst in hps_platform_altera_emif_arch_nf_181_l74jv7y_top
   > seq_if_inst in hps_platform_altera_emif_arch_nf_180_zngiyoi_top
-[+] altera_gpio 
+[+] altera_gpio
   Instantiated as:
   > core in adc_data_in_altera_gpio_181_x77pbgi
   > core in dac9125_sdr_out_altera_gpio_181_nesxroi
   > core in dac9717_ddr_out_altera_gpio_181_alpx6gy (rtl)
   > core in dac9717_ddr_out_altera_gpio_181_alpx6gy
-[+] altera_gpio_one_bit 
+[+] altera_gpio_one_bit
   Instantiated as:
   > altera_gpio_bit_i in altera_gpio
   > altera_gpio_bit_i in altera_gpio
   > altera_gpio_bit_i in altera_gpio
   > altera_gpio_bit_i in altera_gpio
-[+] altera_incr_burst_converter 
+[+] altera_incr_burst_converter
   Instantiated as:
   > the_converter_for_avalon_incr_slave in altera_merlin_burst_adapter_new
   > the_converter_for_avalon_incr_slave in altera_merlin_burst_adapter_new
@@ -769,13 +766,13 @@
   > the_converter_for_avalon_incr_slave in altera_merlin_burst_adapter_new
   > the_converter_for_avalon_incr_slave in altera_merlin_burst_adapter_new
   > the_converter_for_avalon_incr_slave in altera_merlin_burst_adapter_new
-[+] altera_iopll 
+[+] altera_iopll
   Instantiated as:
   > altera_iopll_i in clock_gen_altera_iopll_181_hm2myny
   > altera_iopll_i in clock_gen_altera_iopll_181_vgbqsbi
   > altera_iopll_i in hps_platform_altera_iopll_181_w3aqh2i
   > altera_iopll_i in hps_platform_altera_iopll_180_jb5p2hy
-[+] altera_merlin_address_alignment 
+[+] altera_merlin_address_alignment
   Instantiated as:
   > align_address_to_size in altera_merlin_axi_master_ni
   > align_address_to_size in altera_merlin_burst_adapter_13_1
@@ -783,11 +780,11 @@
   > align_address_to_size in altera_merlin_axi_master_ni
   > align_address_to_size in altera_merlin_burst_adapter_13_1
   > align_address_to_size in altera_merlin_burst_adapter_new
-[+] altera_merlin_arb_adder 
+[+] altera_merlin_arb_adder
   Instantiated as:
   > adder in altera_merlin_arbitrator
   > adder in altera_merlin_arbitrator
-[+] altera_merlin_arbitrator 
+[+] altera_merlin_arbitrator
   Instantiated as:
   > arb in hps_platform_altera_merlin_multiplexer_181_6evmzai
   > arb in hps_platform_altera_merlin_multiplexer_181_dx3w2qq
@@ -795,12 +792,12 @@
   > arb in hps_platform_altera_merlin_multiplexer_181_nkbmrtq
   > arb in hps_platform_altera_merlin_multiplexer_180_aogbhry
   > arb in hps_platform_altera_merlin_multiplexer_180_n6zzczq
-[+] altera_merlin_axi_master_ni 
+[+] altera_merlin_axi_master_ni
   Instantiated as:
   > arria10_hps_0_h2f_lw_axi_master_agent in hps_platform_altera_mm_interconnect_181_4jcth3q
   > arria10_hps_0_h2f_axi_master_agent in hps_platform_altera_mm_interconnect_181_vq4lfjq
   > arria10_hps_0_h2f_lw_axi_master_agent in hps_platform_altera_mm_interconnect_180_kxr6xra
-[+] altera_merlin_burst_adapter 
+[+] altera_merlin_burst_adapter
   Instantiated as:
   > measurement_fifo_0_csm_port_burst_adapter in hps_platform_altera_mm_interconnect_181_4jcth3q
   > discrete_avl_mm_s0_burst_adapter in hps_platform_altera_mm_interconnect_181_4jcth3q
@@ -815,29 +812,29 @@
   > measurement_fifo_0_data_port_burst_adapter in hps_platform_altera_mm_interconnect_181_vq4lfjq
   > system_info_subsys_mm_slave_burst_adapter in hps_platform_altera_mm_interconnect_180_kxr6xra
   > ads4129_spi_spi_control_port_burst_adapter in hps_platform_altera_mm_interconnect_180_kxr6xra
-[+] altera_merlin_burst_adapter_13_1 
+[+] altera_merlin_burst_adapter_13_1
   Instantiated as:
   > burst_adapter in altera_merlin_burst_adapter
   > burst_adapter in altera_merlin_burst_adapter
-[+] altera_merlin_burst_adapter_adder 
+[+] altera_merlin_burst_adapter_adder
   Instantiated as:
   > subtract in altera_merlin_burst_adapter_subtractor
   > subtract in altera_merlin_burst_adapter_subtractor
-[+] altera_merlin_burst_adapter_burstwrap_increment 
+[+] altera_merlin_burst_adapter_burstwrap_increment
   Instantiated as:
   > the_burstwrap_increment in altera_merlin_burst_adapter_13_1
   > the_burstwrap_increment in altera_merlin_burst_adapter_new
   > the_burstwrap_increment in altera_merlin_burst_adapter_13_1
   > the_burstwrap_increment in altera_merlin_burst_adapter_new
-[+] altera_merlin_burst_adapter_min 
+[+] altera_merlin_burst_adapter_min
   Instantiated as:
   > the_min in altera_merlin_burst_adapter_13_1
   > the_min in altera_merlin_burst_adapter_13_1
-[+] altera_merlin_burst_adapter_new 
+[+] altera_merlin_burst_adapter_new
   Instantiated as:
   > burst_adapter in altera_merlin_burst_adapter
   > burst_adapter in altera_merlin_burst_adapter
-[+] altera_merlin_burst_adapter_subtractor 
+[+] altera_merlin_burst_adapter_subtractor
   Instantiated as:
   > ab_sub in altera_merlin_burst_adapter_min
   > ac_sub in altera_merlin_burst_adapter_min
@@ -851,25 +848,25 @@
   > da_sub in altera_merlin_burst_adapter_min
   > db_sub in altera_merlin_burst_adapter_min
   > dc_sub in altera_merlin_burst_adapter_min
-[+] altera_merlin_burst_adapter_uncompressed_only 
+[+] altera_merlin_burst_adapter_uncompressed_only
   Instantiated as:
   > burst_adapter in altera_merlin_burst_adapter
   > burst_adapter in altera_merlin_burst_adapter
-[+] altera_merlin_burst_uncompressor 
+[+] altera_merlin_burst_uncompressor
   Instantiated as:
   > uncompressor in altera_merlin_slave_agent
   > uncompressor in altera_merlin_slave_agent
-[+] altera_merlin_master_agent 
+[+] altera_merlin_master_agent
   Instantiated as:
   > mm_bridge_0_m0_agent in hps_platform_altera_mm_interconnect_181_gyspmpy
-[+] altera_merlin_master_translator 
+[+] altera_merlin_master_translator
   Instantiated as:
   > mm_bridge_0_m0_translator in hps_platform_altera_mm_interconnect_181_gyspmpy
-[+] altera_merlin_reorder_memory 
+[+] altera_merlin_reorder_memory
   Instantiated as:
   > reorder_memory in altera_merlin_traffic_limiter
   > reorder_memory in altera_merlin_traffic_limiter
-[+] altera_merlin_slave_agent 
+[+] altera_merlin_slave_agent
   Instantiated as:
   > measurement_fifo_0_csm_port_agent in hps_platform_altera_mm_interconnect_181_4jcth3q
   > discrete_avl_mm_s0_agent in hps_platform_altera_mm_interconnect_181_4jcth3q
@@ -887,7 +884,7 @@
   > measurement_fifo_0_data_port_agent in hps_platform_altera_mm_interconnect_181_vq4lfjq
   > system_info_subsys_mm_slave_agent in hps_platform_altera_mm_interconnect_180_kxr6xra
   > ads4129_spi_spi_control_port_agent in hps_platform_altera_mm_interconnect_180_kxr6xra
-[+] altera_merlin_slave_translator 
+[+] altera_merlin_slave_translator
   Instantiated as:
   > measurement_fifo_0_csm_port_translator in hps_platform_altera_mm_interconnect_181_4jcth3q
   > discrete_avl_mm_s0_translator in hps_platform_altera_mm_interconnect_181_4jcth3q
@@ -905,25 +902,25 @@
   > measurement_fifo_0_data_port_translator in hps_platform_altera_mm_interconnect_181_vq4lfjq
   > system_info_subsys_mm_slave_translator in hps_platform_altera_mm_interconnect_180_kxr6xra
   > ads4129_spi_spi_control_port_translator in hps_platform_altera_mm_interconnect_180_kxr6xra
-[+] altera_merlin_traffic_limiter 
+[+] altera_merlin_traffic_limiter
   Instantiated as:
   > arria10_hps_0_h2f_lw_axi_master_wr_limiter in hps_platform_altera_mm_interconnect_181_4jcth3q
   > arria10_hps_0_h2f_lw_axi_master_rd_limiter in hps_platform_altera_mm_interconnect_181_4jcth3q
   > mm_bridge_0_m0_limiter in hps_platform_altera_mm_interconnect_181_gyspmpy
   > arria10_hps_0_h2f_lw_axi_master_wr_limiter in hps_platform_altera_mm_interconnect_180_kxr6xra
   > arria10_hps_0_h2f_lw_axi_master_rd_limiter in hps_platform_altera_mm_interconnect_180_kxr6xra
-[+] altera_oct 
+[+] altera_oct
   Instantiated as:
   > oct_inst in altera_emif_arch_nf_oct
   > oct_inst in altera_emif_arch_nf_oct
-[+] altera_oct_um_fsm 
+[+] altera_oct_um_fsm
   Instantiated as:
   > altera_oct_um_fsm_i in altera_oct
   > altera_oct_um_fsm_i in altera_oct
-[+] altera_pll 
+[+] altera_pll
   Instantiated as:
   > altera_pll_i in tacanpll_0002
-[+] altera_reset_controller 
+[+] altera_reset_controller
   Instantiated as:
   > rst_controller in hps_platform (rtl) (rtl) (rtl)
   > rst_controller_001 in hps_platform (rtl) (rtl) (rtl)
@@ -931,7 +928,7 @@
   > rst_controller_001 in hps_platform (rtl) (rtl) (rtl)
   > rst_controller in hps_platform (rtl) (rtl) (rtl)
   > rst_controller_001 in hps_platform (rtl) (rtl) (rtl)
-[+] altera_reset_synchronizer 
+[+] altera_reset_synchronizer
   Instantiated as:
   > alt_rst_sync_uq1 in altera_reset_controller
   > alt_rst_req_sync_uq1 in altera_reset_controller
@@ -939,39 +936,39 @@
   > alt_rst_sync_uq1 in altera_reset_controller
   > alt_rst_req_sync_uq1 in altera_reset_controller
   > alt_rst_sync_uq2 in altera_reset_controller
-[+] altera_smartvid_reset_synchronizer 
+[+] altera_smartvid_reset_synchronizer
   Instantiated as:
   > i_reset_sync_25mhz in altera_chip_id_a10
   > i_reset_sync_25mhz in altera_chip_id_a10
-[+] altera_std_synchronizer_nocut 
+[+] altera_std_synchronizer_nocut
   Instantiated as:
   > in_to_out_synchronizer in altera_avalon_st_clock_crosser
   > out_to_in_synchronizer in altera_avalon_st_clock_crosser
-[+] altera_temp_sense 
+[+] altera_temp_sense
   Instantiated as:
   > temp_sense_0 in hps_platform_system_info_subsys_10_siwlkji (rtl)
   > temp_sense_0 in hps_platform_system_info_subsys_10_ieibhaa (rtl)
-[+] altera_uid_ctl_fuse 
+[+] altera_uid_ctl_fuse
   Instantiated as:
   > fuse_handling in altera_chip_id_a10
   > fuse_handling in altera_chip_id_a10
-[+] altera_uid_ctl_tmgr 
+[+] altera_uid_ctl_tmgr
   Instantiated as:
   > task_manager in altera_chip_id_a10
   > task_manager in altera_chip_id_a10
-[+] altera_voltage_sensor_control 
+[+] altera_voltage_sensor_control
   Instantiated as:
   > control_internal in hps_platform_altera_voltage_sensor_181_lqrtvma
-[+] altera_voltage_sensor_sample_store 
+[+] altera_voltage_sensor_sample_store
   Instantiated as:
   > sample_store_internal in hps_platform_altera_voltage_sensor_181_lqrtvma
-[+] altera_voltage_sensor_sample_store_ram 
+[+] altera_voltage_sensor_sample_store_ram
   Instantiated as:
   > u_ss_ram in altera_voltage_sensor_sample_store
-[+] altera_voltage_sensor_sample_store_register 
+[+] altera_voltage_sensor_sample_store_register
   Instantiated as:
   > u_ss_register in altera_voltage_sensor_sample_store
-[+] altera_wrap_burst_converter 
+[+] altera_wrap_burst_converter
   Instantiated as:
   > the_converter_for_avalon_wrap_slave in altera_merlin_burst_adapter_new
   > the_converter_for_avalon_wrap_slave in altera_merlin_burst_adapter_new
@@ -979,7 +976,7 @@
   > the_converter_for_avalon_wrap_slave in altera_merlin_burst_adapter_new
   > the_converter_for_avalon_wrap_slave in altera_merlin_burst_adapter_new
   > the_converter_for_avalon_wrap_slave in altera_merlin_burst_adapter_new
-[+] altsource_probe 
+[+] altsource_probe
   Instantiated as:
   > global_reset_n_issp in altera_emif_arch_nf_core_clks_rsts
   > cpa_lock_pri_issp in altera_emif_arch_nf_core_clks_rsts
@@ -993,10 +990,10 @@
   > pll_lock_issp in altera_emif_arch_nf_pll
   > cal_success in hps_platform_altera_emif_arch_nf_180_zngiyoi_top
   > cal_fail in hps_platform_altera_emif_arch_nf_180_zngiyoi_top
-[+] altsyncram 
+[+] altsyncram
   Instantiated as:
   > altera_syncram_component in altera_voltage_sensor_sample_store_ram
-[+] arb_timer_new 
+[+] arb_timer_new
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -1007,31 +1004,31 @@
   {+} rtl
     Subcomponent hierarchy:
   Instantiated as:
-[+] asj_altqmcpipe 
+[+] asj_altqmcpipe
   Instantiated as:
   > ux000 in if_nco_altera_nco_ii_181_vs2do2i
   > ux000 in if_nco_altera_nco_ii_181_vs2do2i
-[+] asj_crs_par 
+[+] asj_crs_par
   Instantiated as:
   > ux006 in if_nco_altera_nco_ii_181_vs2do2i
   > ux006 in if_nco_altera_nco_ii_181_vs2do2i
-[+] asj_dxx 
+[+] asj_dxx
   Instantiated as:
   > ux002 in if_nco_altera_nco_ii_181_vs2do2i
   > ux002 in if_nco_altera_nco_ii_181_vs2do2i
-[+] asj_dxx_g 
+[+] asj_dxx_g
   Instantiated as:
   > ux001 in if_nco_altera_nco_ii_181_vs2do2i
   > ux001 in if_nco_altera_nco_ii_181_vs2do2i
-[+] asj_nco_apr_dxx 
+[+] asj_nco_apr_dxx
   Instantiated as:
   > ux0219 in if_nco_altera_nco_ii_181_vs2do2i
   > ux0219 in if_nco_altera_nco_ii_181_vs2do2i
-[+] asj_nco_isdr 
+[+] asj_nco_isdr
   Instantiated as:
   > ux710isdr in if_nco_altera_nco_ii_181_vs2do2i
   > ux710isdr in if_nco_altera_nco_ii_181_vs2do2i
-[+] assert 
+[+] assert
   Instantiated as:
   > property in altera_merlin_axi_master_ni
   > property in altera_merlin_axi_master_ni
@@ -1043,7 +1040,7 @@
   > property in altera_merlin_axi_master_ni
   > property in altera_merlin_axi_master_ni
   > property in altera_merlin_slave_agent
-[+] atc_interr_detect 
+[+] atc_interr_detect
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -1051,7 +1048,7 @@
   > DUT in atc_interr_detect_tb (behavioral)
   > atc_interr_detect_1 in pulse_decoder (rtl) (rtl)
   > atc_interr_detect_1 in pulse_decoder (rtl) (rtl)
-[+] atc_interr_detect_ORIGINAL 
+[+] atc_interr_detect_ORIGINAL
   Architectures:
   {+} fsm
     Subcomponent hierarchy:
@@ -1069,7 +1066,7 @@
   {+} rtl
     Subcomponent hierarchy:
   Instantiated as:
-[+] atten_latch_ctrl 
+[+] atten_latch_ctrl
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -1085,7 +1082,7 @@
     Subcomponent hierarchy:
     |-> DUT: atten_latch_ctrl  (rtl)
   Instantiated as:
-[+] basic_fifo 
+[+] basic_fifo
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -1099,13 +1096,13 @@
     Subcomponent hierarchy:
     |-> DUT: basic_fifo  (rtl)
   Instantiated as:
-[+] block_ram 
+[+] block_ram
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
   Instantiated as:
   > block_ram_1 in data_fifo (rtl)
-[+] carb 
+[+] carb
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -1118,7 +1115,7 @@
   > carb_1 in xpdr_source_top (rtl)
   > carb_1 in pulse_encoder_top (rtl)
   > carb_1 in carb_tb (behavioral)
-[+] carb_player 
+[+] carb_player
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -1132,30 +1129,30 @@
     |-> carb_1: carb  (rtl)
     |-> discrete_csm_1: discrete_csm  (rtl)
   Instantiated as:
-[+] clock_gen 
+[+] clock_gen
   Architectures:
   {+} rtl
   {+} rtl
     Subcomponent hierarchy:
-    |-> iopll_0: clock_gen_altera_iopll_181_bhchlaq 
-    |-> iopll_1: clock_gen_altera_iopll_181_7bk2e2q 
-    |-> iopll_0: clock_gen_altera_iopll_181_vgbqsbi 
-    |-> iopll_1: clock_gen_altera_iopll_181_hm2myny 
+    |-> iopll_0: clock_gen_altera_iopll_181_bhchlaq
+    |-> iopll_1: clock_gen_altera_iopll_181_7bk2e2q
+    |-> iopll_0: clock_gen_altera_iopll_181_vgbqsbi
+    |-> iopll_1: clock_gen_altera_iopll_181_hm2myny
   Instantiated as:
   > clock_gen_1 in firefly_fpga_top (rtl)
-[+] clock_gen_altera_iopll_181_7bk2e2q 
+[+] clock_gen_altera_iopll_181_7bk2e2q
   Instantiated as:
   > iopll_1 in clock_gen (rtl) (rtl)
-[+] clock_gen_altera_iopll_181_bhchlaq 
+[+] clock_gen_altera_iopll_181_bhchlaq
   Instantiated as:
   > iopll_0 in clock_gen (rtl) (rtl)
-[+] clock_gen_altera_iopll_181_hm2myny 
+[+] clock_gen_altera_iopll_181_hm2myny
   Instantiated as:
   > iopll_1 in clock_gen (rtl) (rtl)
-[+] clock_gen_altera_iopll_181_vgbqsbi 
+[+] clock_gen_altera_iopll_181_vgbqsbi
   Instantiated as:
   > iopll_0 in clock_gen (rtl) (rtl)
-[+] coarse_mixer 
+[+] coarse_mixer
   Architectures:
   {+} arch
     Subcomponent hierarchy:
@@ -1163,29 +1160,29 @@
   > COARSE_MIX in rx_dsp_top (rtl)
   > COARSE_MIX in rx_dsp_top_lf (rtl)
   > COARSE_MIX in uat_rx_demod (rtl)
-[+] complex_mult 
+[+] complex_mult
   Architectures:
   {+} arch
     Subcomponent hierarchy:
   Instantiated as:
   > U_2 in quadrature_mixer (arch)
-[+] cord_2c 
+[+] cord_2c
   Instantiated as:
   > cordinv in if_nco_altera_nco_ii_181_vs2do2i
   > cordinv in if_nco_altera_nco_ii_181_vs2do2i
-[+] cord_fs 
+[+] cord_fs
   Instantiated as:
   > cfs in if_nco_altera_nco_ii_181_vs2do2i
   > cfs in if_nco_altera_nco_ii_181_vs2do2i
-[+] cord_init 
+[+] cord_init
   Instantiated as:
   > ci in if_nco_altera_nco_ii_181_vs2do2i
   > ci in if_nco_altera_nco_ii_181_vs2do2i
-[+] cord_seg_sel 
+[+] cord_seg_sel
   Instantiated as:
   > css in if_nco_altera_nco_ii_181_vs2do2i
   > css in if_nco_altera_nco_ii_181_vs2do2i
-[+] cordic_axor_1p_lpm 
+[+] cordic_axor_1p_lpm
   Instantiated as:
   > u5 in if_nco_altera_nco_ii_181_vs2do2i
   > u8 in if_nco_altera_nco_ii_181_vs2do2i
@@ -1217,10 +1214,10 @@
   > u41 in if_nco_altera_nco_ii_181_vs2do2i
   > u44 in if_nco_altera_nco_ii_181_vs2do2i
   > u47 in if_nco_altera_nco_ii_181_vs2do2i
-[+] cordic_p2r 
+[+] cordic_p2r
   Instantiated as:
   > DUT3 in theta_gen_tb (testbench)
-[+] cordic_sxor_1p_lpm 
+[+] cordic_sxor_1p_lpm
   Instantiated as:
   > u4 in if_nco_altera_nco_ii_181_vs2do2i
   > u7 in if_nco_altera_nco_ii_181_vs2do2i
@@ -1252,7 +1249,7 @@
   > u40 in if_nco_altera_nco_ii_181_vs2do2i
   > u43 in if_nco_altera_nco_ii_181_vs2do2i
   > u46 in if_nco_altera_nco_ii_181_vs2do2i
-[+] cordic_zxor_1p_lpm 
+[+] cordic_zxor_1p_lpm
   Instantiated as:
   > u3 in if_nco_altera_nco_ii_181_vs2do2i
   > u6 in if_nco_altera_nco_ii_181_vs2do2i
@@ -1284,10 +1281,10 @@
   > u39 in if_nco_altera_nco_ii_181_vs2do2i
   > u42 in if_nco_altera_nco_ii_181_vs2do2i
   > u45 in if_nco_altera_nco_ii_181_vs2do2i
-[+] counter 
+[+] counter
   Instantiated as:
   > counter_1 in ext_trigger (struct)
-[+] cross_clock_pulse 
+[+] cross_clock_pulse
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -1304,17 +1301,17 @@
     |-> cross_clock_pulse_1: cross_clock_pulse  (rtl)
     |-> cross_clock_pulse_2: cross_clock_pulse  (rtl)
   Instantiated as:
-[+] dac9125_sdr_out 
+[+] dac9125_sdr_out
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
-    |-> gpio_0: dac9125_sdr_out_altera_gpio_181_nesxroi 
+    |-> gpio_0: dac9125_sdr_out_altera_gpio_181_nesxroi
   Instantiated as:
   > dac9125_sdr_out_1 in firefly_fpga_top (rtl)
-[+] dac9125_sdr_out_altera_gpio_181_nesxroi 
+[+] dac9125_sdr_out_altera_gpio_181_nesxroi
   Instantiated as:
   > gpio_0 in dac9125_sdr_out (rtl)
-[+] dac9717_ddr_out 
+[+] dac9717_ddr_out
   Architectures:
   {+} rtl
   {+} rtl
@@ -1324,11 +1321,11 @@
   Instantiated as:
   > dac9717_ddr_out_1 in firefly_fpga_top (rtl)
   > DUT in dac9717_ddr_out_tb (testbench)
-[+] dac9717_ddr_out_altera_gpio_181_alpx6gy 
+[+] dac9717_ddr_out_altera_gpio_181_alpx6gy
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
-    |-> core: altera_gpio 
+    |-> core: altera_gpio
     |-> core: altera_gpio
   Instantiated as:
   > gpio_0 in dac9717_ddr_out (rtl) (rtl)
@@ -1339,7 +1336,7 @@
     Subcomponent hierarchy:
     |-> DUT: dac9717_ddr_out  (rtl) (rtl)
   Instantiated as:
-[+] dac9717_spi 
+[+] dac9717_spi
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -1355,7 +1352,7 @@
     |-> DUT: dac9717_spi  (rtl)
     |-> discrete_csm_1: discrete_csm  (rtl)
   Instantiated as:
-[+] dac_src_mgmt 
+[+] dac_src_mgmt
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -1375,7 +1372,7 @@
     Subcomponent hierarchy:
     |-> RAM: gp_dp_ram  (arch)
   Instantiated as:
-[+] data_fifo 
+[+] data_fifo
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -1386,7 +1383,7 @@
   > data_fifo_1 in DataDelay128_tb (behavioral) (struct)
   > data_fifo_1 in pulse_decoder (rtl) (rtl)
   > data_fifo_2 in pulse_decoder (rtl) (rtl)
-[+] data_lut 
+[+] data_lut
   Architectures:
   {+} arch
   {+} arch
@@ -1397,7 +1394,7 @@
   > data_lut_1 in uat_tx_tb (behavioral)
   > VOR_NCO_LUT in nco (rtl)
   > VOR_NCO_LUT in nco_fm (rtl)
-[+] decimation_cic 
+[+] decimation_cic
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -1407,7 +1404,7 @@
   Instantiated as:
   > CIC_FILT_I in rx_dsp_top_lf (rtl)
   > CIC_FILT_Q in rx_dsp_top_lf (rtl)
-[+] delay_cntl 
+[+] delay_cntl
   Architectures:
   {+} struct
     Subcomponent hierarchy:
@@ -1418,14 +1415,14 @@
   {+} struct
     Subcomponent hierarchy:
   Instantiated as:
-[+] digitaldelay 
+[+] digitaldelay
   Architectures:
   {+} digitaldelay_a
     Subcomponent hierarchy:
-    |-> U0: wrapped_digitaldelay 
+    |-> U0: wrapped_digitaldelay
   Instantiated as:
   > I0 in DataDelay128 (struct)
-[+] discrete_csm 
+[+] discrete_csm
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -1443,7 +1440,7 @@
     Subcomponent hierarchy:
     |-> DUT: discrete_csm  (rtl)
   Instantiated as:
-[+] dme_if_range_sweep 
+[+] dme_if_range_sweep
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -1455,9 +1452,9 @@
   {+} behavioral
     Subcomponent hierarchy:
     |-> DUT: dme_if_range_sweep  (rtl)
-    |-> elbc_gpcm_if_1: elbc_gpcm_if 
+    |-> elbc_gpcm_if_1: elbc_gpcm_if
   Instantiated as:
-[+] dual_port_ram 
+[+] dual_port_ram
   Architectures:
   {+} rtl
   {+} rtl
@@ -1469,38 +1466,38 @@
   > dual_port_ram_1 in measurement_fifo (rtl) (rtl)
   > dual_port_ram_1 in meas_fifo_ram_32x16k (rtl)
   > dual_port_ram_2 in meas_fifo_ram_32x16k (rtl)
-[+] echo 
+[+] echo
   Instantiated as:
   > echo_1 in ext_trigger (struct)
-[+] echo_trigger 
+[+] echo_trigger
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
   Instantiated as:
   > echo_trigger_1 in tx_trigger (rtl)
-[+] elbc_gpcm_if 
+[+] elbc_gpcm_if
   Instantiated as:
   > elbc_gpcm_if_1 in dme_if_range_sweep_tb (behavioral)
   > elbc_gpcm_if_1 in uat_rx_ctrl_tb (behavioral)
   > elbc_gpcm_if_1 in uat_tx_tb (behavioral)
-[+] ext_trigger 
+[+] ext_trigger
   Architectures:
   {+} struct
     Subcomponent hierarchy:
     |-> dme_if_range_sweep_1: dme_if_range_sweep  (rtl)
-    |-> counter_1: counter 
+    |-> counter_1: counter
     |-> ident_1: ident  (imp)
-    |-> echo_1: echo 
+    |-> echo_1: echo
     |-> pulse_timer_1: pulse_timer  (struct) (struct)
   Instantiated as:
   > ext_trigger_1 in pulse_encoder_top (rtl)
-[+] f2s_rl_adp 
+[+] f2s_rl_adp
   Instantiated as:
   > f2s_rl_adp_inst in twentynm_hps_rl_interface_fpga2hps
   > f2s_rl_adp_inst in f2s_rl_delay_adp
   > f2s_rl_adp_inst in twentynm_hps_rl_interface_fpga2hps
   > f2s_rl_adp_inst in f2s_rl_delay_adp
-[+] f2s_rl_delay_adp 
+[+] f2s_rl_delay_adp
   Instantiated as:
   > f2s_rl_adp_inst_0 in twentynm_hps_rl_mode0_fpga2sdram
   > f2s_rl_adp_inst_1 in twentynm_hps_rl_mode0_fpga2sdram
@@ -1560,7 +1557,7 @@
     |-> heartbeat_1: heartbeat  (rtl)
     |-> heartbeat_2: heartbeat  (rtl)
   Instantiated as:
-[+] fsk_demod_top 
+[+] fsk_demod_top
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -1577,7 +1574,7 @@
     |-> DUT: fsk_demod_top  (rtl)
     |-> theta_gen_1: theta_gen  (rtl)
   Instantiated as:
-[+] fsk_detect_top 
+[+] fsk_detect_top
   Architectures:
   {+} arch
     Subcomponent hierarchy:
@@ -1586,7 +1583,7 @@
     |-> PWR_DET: power_detect  (arch)
   Instantiated as:
   > fsk_detect_top_1 in fsk_demod_top (rtl)
-[+] full_reg_slice 
+[+] full_reg_slice
   Instantiated as:
   > i_s2f_ar in s2f_rl_adp
   > i_s2f_aw in s2f_rl_adp
@@ -1608,162 +1605,162 @@
   > i_f2s_w in f2s_rl_adp
   > i_f2s_r in f2s_rl_adp
   > i_f2s_b in f2s_rl_adp
-[+] gain_stage 
+[+] gain_stage
   Architectures:
   {+} arch
     Subcomponent hierarchy:
   Instantiated as:
   > gain_stage_1 in uat_top (rtl)
   > gain_stage_1 in uat_tx_tb (behavioral)
-[+] gp_dp_ram 
+[+] gp_dp_ram
   Architectures:
   {+} arch
     Subcomponent hierarchy:
   Instantiated as:
   > RAM in data_delay_128 (arch)
-[+] heartbeat 
+[+] heartbeat
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
   Instantiated as:
   > heartbeat_1 in firefly_fpga_top (rtl)
   > heartbeat_2 in firefly_fpga_top (rtl)
-[+] hps_emif_interface_to_ddr 
+[+] hps_emif_interface_to_ddr
   Instantiated as:
   > inst in a10_hps_emif_interface
   > inst in a10_hps_emif_interface
-[+] hps_platform 
+[+] hps_platform
   Architectures:
   {+} rtl
   {+} rtl
   {+} rtl
     Subcomponent hierarchy:
     |-> ads4129_spi: hps_platform_altera_avalon_spi_181_rzyhj5a  (europa)
-    |-> arria10_hps_0: hps_platform_altera_arria10_hps_181_tgjwrna 
-    |-> clkpll_80_10: hps_platform_altera_iopll_181_bfocg5i 
-    |-> discrete_avl_mm: altera_avalon_mm_bridge 
+    |-> arria10_hps_0: hps_platform_altera_arria10_hps_181_tgjwrna
+    |-> clkpll_80_10: hps_platform_altera_iopll_181_bfocg5i
+    |-> discrete_avl_mm: altera_avalon_mm_bridge
     |-> eth_phy_reset_ctrl: hps_platform_altera_avalon_pio_181_xd52gra  (europa)
     |-> eth_phy_status: hps_platform_altera_avalon_pio_181_dv5x75i  (europa)
-    |-> hps_ddr: hps_platform_altera_emif_a10_hps_181_gyzwlsi 
-    |-> measurement_fifo_0: hps_platform_measurement_fifo_10_6moa65y 
-    |-> rf_discrete_spi: hps_platform_altera_avalon_spi_181_hh7smkq 
-    |-> rf_rx_spi: hps_platform_altera_avalon_spi_181_qygbnza 
-    |-> rf_tx_spi: hps_platform_altera_avalon_spi_181_xs4cxii 
+    |-> hps_ddr: hps_platform_altera_emif_a10_hps_181_gyzwlsi
+    |-> measurement_fifo_0: hps_platform_measurement_fifo_10_6moa65y
+    |-> rf_discrete_spi: hps_platform_altera_avalon_spi_181_hh7smkq
+    |-> rf_rx_spi: hps_platform_altera_avalon_spi_181_qygbnza
+    |-> rf_tx_spi: hps_platform_altera_avalon_spi_181_xs4cxii
     |-> system_info_subsys: hps_platform_system_info_subsys_10_siwlkji  (rtl)
-    |-> mm_interconnect_0: hps_platform_altera_mm_interconnect_181_tigbpvy 
-    |-> mm_interconnect_1: hps_platform_altera_mm_interconnect_181_rr2d6da 
-    |-> irq_mapper: hps_platform_altera_irq_mapper_181_ejtroui 
-    |-> rst_controller: altera_reset_controller 
-    |-> rst_controller_001: altera_reset_controller 
-    |-> ad7682_spi: hps_platform_altera_avalon_spi_181_igxbxxq 
-    |-> ads4129_spi: hps_platform_altera_avalon_spi_181_vcar6ai 
-    |-> arria10_hps_0: hps_platform_altera_arria10_hps_181_4e3tupq 
-    |-> clkpll_80_10: hps_platform_altera_iopll_181_w3aqh2i 
-    |-> discrete_avl_mm: altera_avalon_mm_bridge 
+    |-> mm_interconnect_0: hps_platform_altera_mm_interconnect_181_tigbpvy
+    |-> mm_interconnect_1: hps_platform_altera_mm_interconnect_181_rr2d6da
+    |-> irq_mapper: hps_platform_altera_irq_mapper_181_ejtroui
+    |-> rst_controller: altera_reset_controller
+    |-> rst_controller_001: altera_reset_controller
+    |-> ad7682_spi: hps_platform_altera_avalon_spi_181_igxbxxq
+    |-> ads4129_spi: hps_platform_altera_avalon_spi_181_vcar6ai
+    |-> arria10_hps_0: hps_platform_altera_arria10_hps_181_4e3tupq
+    |-> clkpll_80_10: hps_platform_altera_iopll_181_w3aqh2i
+    |-> discrete_avl_mm: altera_avalon_mm_bridge
     |-> eth_phy_reset_ctrl: hps_platform_altera_avalon_pio_181_xd52gra  (europa)
     |-> eth_phy_status: hps_platform_altera_avalon_pio_181_dv5x75i  (europa)
-    |-> hps_ddr: hps_platform_altera_emif_a10_hps_181_gyzwlsi 
+    |-> hps_ddr: hps_platform_altera_emif_a10_hps_181_gyzwlsi
     |-> measurement_fifo_0: measurement_fifo  (rtl) (rtl)
-    |-> rf_discrete_spi: hps_platform_altera_avalon_spi_181_hh7smkq 
-    |-> rf_rx_spi: hps_platform_altera_avalon_spi_181_qygbnza 
-    |-> rf_tx_spi: hps_platform_altera_avalon_spi_181_xs4cxii 
+    |-> rf_discrete_spi: hps_platform_altera_avalon_spi_181_hh7smkq
+    |-> rf_rx_spi: hps_platform_altera_avalon_spi_181_qygbnza
+    |-> rf_tx_spi: hps_platform_altera_avalon_spi_181_xs4cxii
     |-> system_info_subsys: hps_platform_system_info_subsys_10_siwlkji  (rtl)
-    |-> mm_interconnect_0: hps_platform_altera_mm_interconnect_181_vq4lfjq 
-    |-> mm_interconnect_1: hps_platform_altera_mm_interconnect_181_4jcth3q 
-    |-> irq_mapper: hps_platform_altera_irq_mapper_181_5zjpgxi 
-    |-> rst_controller: altera_reset_controller 
-    |-> rst_controller_001: altera_reset_controller 
-    |-> ads4129_spi: hps_platform_altera_avalon_spi_180_hfm5lna 
-    |-> arria10_hps_0: hps_platform_altera_arria10_hps_180_mbrwpxy 
-    |-> clkpll_80_10: hps_platform_altera_iopll_180_jb5p2hy 
-    |-> hps_ddr: hps_platform_altera_emif_a10_hps_180_pwechwq 
+    |-> mm_interconnect_0: hps_platform_altera_mm_interconnect_181_vq4lfjq
+    |-> mm_interconnect_1: hps_platform_altera_mm_interconnect_181_4jcth3q
+    |-> irq_mapper: hps_platform_altera_irq_mapper_181_5zjpgxi
+    |-> rst_controller: altera_reset_controller
+    |-> rst_controller_001: altera_reset_controller
+    |-> ads4129_spi: hps_platform_altera_avalon_spi_180_hfm5lna
+    |-> arria10_hps_0: hps_platform_altera_arria10_hps_180_mbrwpxy
+    |-> clkpll_80_10: hps_platform_altera_iopll_180_jb5p2hy
+    |-> hps_ddr: hps_platform_altera_emif_a10_hps_180_pwechwq
     |-> system_info_subsys: hps_platform_system_info_subsys_10_ieibhaa  (rtl)
-    |-> mm_interconnect_0: hps_platform_altera_mm_interconnect_180_kxr6xra 
-    |-> irq_mapper: hps_platform_altera_irq_mapper_180_vrecy4a 
-    |-> irq_mapper_001: hps_platform_altera_irq_mapper_180_vrecy4a 
-    |-> rst_controller: altera_reset_controller 
-    |-> rst_controller_001: altera_reset_controller 
+    |-> mm_interconnect_0: hps_platform_altera_mm_interconnect_180_kxr6xra
+    |-> irq_mapper: hps_platform_altera_irq_mapper_180_vrecy4a
+    |-> irq_mapper_001: hps_platform_altera_irq_mapper_180_vrecy4a
+    |-> rst_controller: altera_reset_controller
+    |-> rst_controller_001: altera_reset_controller
   Instantiated as:
   > hps_platform_1 in firefly_fpga_top (rtl)
-[+] hps_platform_altera_arria10_hps_180_mbrwpxy 
+[+] hps_platform_altera_arria10_hps_180_mbrwpxy
   Instantiated as:
   > arria10_hps_0 in hps_platform (rtl) (rtl) (rtl)
-[+] hps_platform_altera_arria10_hps_181_4e3tupq 
+[+] hps_platform_altera_arria10_hps_181_4e3tupq
   Instantiated as:
   > arria10_hps_0 in hps_platform (rtl) (rtl) (rtl)
-[+] hps_platform_altera_arria10_hps_181_tgjwrna 
+[+] hps_platform_altera_arria10_hps_181_tgjwrna
   Instantiated as:
   > arria10_hps_0 in hps_platform (rtl) (rtl) (rtl)
-[+] hps_platform_altera_arria10_hps_io_180_v7teimq 
+[+] hps_platform_altera_arria10_hps_io_180_v7teimq
   Instantiated as:
   > hps_io in hps_platform_altera_arria10_hps_180_mbrwpxy
-[+] hps_platform_altera_arria10_hps_io_181_t6kguyi 
+[+] hps_platform_altera_arria10_hps_io_181_t6kguyi
   Instantiated as:
   > hps_io in hps_platform_altera_arria10_hps_181_tgjwrna
-[+] hps_platform_altera_arria10_hps_io_181_y6ed62y 
+[+] hps_platform_altera_arria10_hps_io_181_y6ed62y
   Instantiated as:
   > hps_io in hps_platform_altera_arria10_hps_181_4e3tupq
-[+] hps_platform_altera_arria10_interface_generator_140_d2sltni 
+[+] hps_platform_altera_arria10_interface_generator_140_d2sltni
   Instantiated as:
   > border in hps_platform_altera_arria10_hps_io_180_v7teimq
-[+] hps_platform_altera_arria10_interface_generator_140_r6bwoey 
+[+] hps_platform_altera_arria10_interface_generator_140_r6bwoey
   Instantiated as:
   > border in hps_platform_altera_arria10_hps_io_181_y6ed62y
-[+] hps_platform_altera_arria10_interface_generator_140_ur3c7vq 
+[+] hps_platform_altera_arria10_interface_generator_140_ur3c7vq
   Instantiated as:
   > fpga_interfaces in hps_platform_altera_arria10_hps_181_tgjwrna
-[+] hps_platform_altera_arria10_interface_generator_140_v2xnp4q 
+[+] hps_platform_altera_arria10_interface_generator_140_v2xnp4q
   Instantiated as:
   > fpga_interfaces in hps_platform_altera_arria10_hps_181_4e3tupq
-[+] hps_platform_altera_arria10_interface_generator_140_vassg6i 
+[+] hps_platform_altera_arria10_interface_generator_140_vassg6i
   Instantiated as:
   > fpga_interfaces in hps_platform_altera_arria10_hps_180_mbrwpxy
-[+] hps_platform_altera_avalon_pio_181_dv5x75i 
+[+] hps_platform_altera_avalon_pio_181_dv5x75i
   Architectures:
   {+} europa
     Subcomponent hierarchy:
   Instantiated as:
   > eth_phy_status in hps_platform (rtl) (rtl) (rtl)
   > eth_phy_status in hps_platform (rtl) (rtl) (rtl)
-[+] hps_platform_altera_avalon_pio_181_xd52gra 
+[+] hps_platform_altera_avalon_pio_181_xd52gra
   Architectures:
   {+} europa
     Subcomponent hierarchy:
   Instantiated as:
   > eth_phy_reset_ctrl in hps_platform (rtl) (rtl) (rtl)
   > eth_phy_reset_ctrl in hps_platform (rtl) (rtl) (rtl)
-[+] hps_platform_altera_avalon_spi_180_hfm5lna 
+[+] hps_platform_altera_avalon_spi_180_hfm5lna
   Instantiated as:
   > ads4129_spi in hps_platform (rtl) (rtl) (rtl)
-[+] hps_platform_altera_avalon_spi_181_hh7smkq 
+[+] hps_platform_altera_avalon_spi_181_hh7smkq
   Instantiated as:
   > rf_discrete_spi in hps_platform (rtl) (rtl) (rtl)
   > rf_discrete_spi in hps_platform (rtl) (rtl) (rtl)
-[+] hps_platform_altera_avalon_spi_181_igxbxxq 
+[+] hps_platform_altera_avalon_spi_181_igxbxxq
   Instantiated as:
   > ad7682_spi in hps_platform (rtl) (rtl) (rtl)
-[+] hps_platform_altera_avalon_spi_181_qygbnza 
+[+] hps_platform_altera_avalon_spi_181_qygbnza
   Instantiated as:
   > rf_rx_spi in hps_platform (rtl) (rtl) (rtl)
   > rf_rx_spi in hps_platform (rtl) (rtl) (rtl)
-[+] hps_platform_altera_avalon_spi_181_rzyhj5a 
+[+] hps_platform_altera_avalon_spi_181_rzyhj5a
   Architectures:
   {+} europa
     Subcomponent hierarchy:
   Instantiated as:
   > ads4129_spi in hps_platform (rtl) (rtl) (rtl)
-[+] hps_platform_altera_avalon_spi_181_vcar6ai 
+[+] hps_platform_altera_avalon_spi_181_vcar6ai
   Instantiated as:
   > ads4129_spi in hps_platform (rtl) (rtl) (rtl)
-[+] hps_platform_altera_avalon_spi_181_xs4cxii 
+[+] hps_platform_altera_avalon_spi_181_xs4cxii
   Instantiated as:
   > rf_tx_spi in hps_platform (rtl) (rtl) (rtl)
   > rf_tx_spi in hps_platform (rtl) (rtl) (rtl)
-[+] hps_platform_altera_avalon_st_adapter_180_s4hdtvi 
+[+] hps_platform_altera_avalon_st_adapter_180_s4hdtvi
   Instantiated as:
   > avalon_st_adapter in hps_platform_altera_mm_interconnect_180_kxr6xra
   > avalon_st_adapter_001 in hps_platform_altera_mm_interconnect_180_kxr6xra
-[+] hps_platform_altera_avalon_st_adapter_181_ynq6atq 
+[+] hps_platform_altera_avalon_st_adapter_181_ynq6atq
   Instantiated as:
   > avalon_st_adapter in hps_platform_altera_mm_interconnect_181_4jcth3q
   > avalon_st_adapter_001 in hps_platform_altera_mm_interconnect_181_4jcth3q
@@ -1779,63 +1776,63 @@
   > avalon_st_adapter_001 in hps_platform_altera_mm_interconnect_181_gyspmpy
   > avalon_st_adapter_002 in hps_platform_altera_mm_interconnect_181_gyspmpy
   > avalon_st_adapter in hps_platform_altera_mm_interconnect_181_vq4lfjq
-[+] hps_platform_altera_emif_a10_hps_180_pwechwq 
+[+] hps_platform_altera_emif_a10_hps_180_pwechwq
   Instantiated as:
   > hps_ddr in hps_platform (rtl) (rtl) (rtl)
-[+] hps_platform_altera_emif_a10_hps_181_gyzwlsi 
+[+] hps_platform_altera_emif_a10_hps_181_gyzwlsi
   Instantiated as:
   > hps_ddr in hps_platform (rtl) (rtl) (rtl)
   > hps_ddr in hps_platform (rtl) (rtl) (rtl)
-[+] hps_platform_altera_emif_arch_nf_180_zngiyoi 
+[+] hps_platform_altera_emif_arch_nf_180_zngiyoi
   Instantiated as:
   > arch in hps_platform_altera_emif_a10_hps_180_pwechwq
-[+] hps_platform_altera_emif_arch_nf_180_zngiyoi_io_aux 
+[+] hps_platform_altera_emif_arch_nf_180_zngiyoi_io_aux
   Instantiated as:
   > io_aux_inst in hps_platform_altera_emif_arch_nf_180_zngiyoi_top
-[+] hps_platform_altera_emif_arch_nf_180_zngiyoi_top 
+[+] hps_platform_altera_emif_arch_nf_180_zngiyoi_top
   Instantiated as:
   > arch_inst in hps_platform_altera_emif_arch_nf_180_zngiyoi
-[+] hps_platform_altera_emif_arch_nf_181_l74jv7y 
+[+] hps_platform_altera_emif_arch_nf_181_l74jv7y
   Instantiated as:
   > arch in hps_platform_altera_emif_a10_hps_181_gyzwlsi
   > arch in hps_platform_altera_emif_a10_hps_181_gyzwlsi
-[+] hps_platform_altera_emif_arch_nf_181_l74jv7y_io_aux 
+[+] hps_platform_altera_emif_arch_nf_181_l74jv7y_io_aux
   Instantiated as:
   > io_aux_inst in hps_platform_altera_emif_arch_nf_181_l74jv7y_top
-[+] hps_platform_altera_emif_arch_nf_181_l74jv7y_top 
+[+] hps_platform_altera_emif_arch_nf_181_l74jv7y_top
   Instantiated as:
   > arch_inst in hps_platform_altera_emif_arch_nf_181_l74jv7y
-[+] hps_platform_altera_iopll_180_jb5p2hy 
+[+] hps_platform_altera_iopll_180_jb5p2hy
   Instantiated as:
   > clkpll_80_10 in hps_platform (rtl) (rtl) (rtl)
-[+] hps_platform_altera_iopll_181_bfocg5i 
+[+] hps_platform_altera_iopll_181_bfocg5i
   Instantiated as:
   > clkpll_80_10 in hps_platform (rtl) (rtl) (rtl)
-[+] hps_platform_altera_iopll_181_w3aqh2i 
+[+] hps_platform_altera_iopll_181_w3aqh2i
   Instantiated as:
   > clkpll_80_10 in hps_platform (rtl) (rtl) (rtl)
-[+] hps_platform_altera_irq_mapper_180_vrecy4a 
+[+] hps_platform_altera_irq_mapper_180_vrecy4a
   Instantiated as:
   > irq_mapper in hps_platform (rtl) (rtl) (rtl)
   > irq_mapper_001 in hps_platform (rtl) (rtl) (rtl)
-[+] hps_platform_altera_irq_mapper_181_5zjpgxi 
+[+] hps_platform_altera_irq_mapper_181_5zjpgxi
   Instantiated as:
   > irq_mapper in hps_platform (rtl) (rtl) (rtl)
-[+] hps_platform_altera_irq_mapper_181_ejtroui 
+[+] hps_platform_altera_irq_mapper_181_ejtroui
   Instantiated as:
   > irq_mapper in hps_platform (rtl) (rtl) (rtl)
-[+] hps_platform_altera_merlin_demultiplexer_180_2u2gpyi 
+[+] hps_platform_altera_merlin_demultiplexer_180_2u2gpyi
   Instantiated as:
   > rsp_demux in hps_platform_altera_mm_interconnect_180_kxr6xra
   > rsp_demux_001 in hps_platform_altera_mm_interconnect_180_kxr6xra
-[+] hps_platform_altera_merlin_demultiplexer_180_k5yox4y 
+[+] hps_platform_altera_merlin_demultiplexer_180_k5yox4y
   Instantiated as:
   > cmd_demux in hps_platform_altera_mm_interconnect_180_kxr6xra
   > cmd_demux_001 in hps_platform_altera_mm_interconnect_180_kxr6xra
-[+] hps_platform_altera_merlin_demultiplexer_181_4ypjmma 
+[+] hps_platform_altera_merlin_demultiplexer_181_4ypjmma
   Instantiated as:
   > cmd_demux in hps_platform_altera_mm_interconnect_181_gyspmpy
-[+] hps_platform_altera_merlin_demultiplexer_181_6fjlpbq 
+[+] hps_platform_altera_merlin_demultiplexer_181_6fjlpbq
   Instantiated as:
   > rsp_demux in hps_platform_altera_mm_interconnect_181_4jcth3q
   > rsp_demux_001 in hps_platform_altera_mm_interconnect_181_4jcth3q
@@ -1846,44 +1843,44 @@
   > rsp_demux_006 in hps_platform_altera_mm_interconnect_181_4jcth3q
   > rsp_demux_007 in hps_platform_altera_mm_interconnect_181_4jcth3q
   > rsp_demux_008 in hps_platform_altera_mm_interconnect_181_4jcth3q
-[+] hps_platform_altera_merlin_demultiplexer_181_e7cpb6i 
+[+] hps_platform_altera_merlin_demultiplexer_181_e7cpb6i
   Instantiated as:
   > cmd_demux in hps_platform_altera_mm_interconnect_181_4jcth3q
   > cmd_demux_001 in hps_platform_altera_mm_interconnect_181_4jcth3q
-[+] hps_platform_altera_merlin_demultiplexer_181_hbokq6i 
+[+] hps_platform_altera_merlin_demultiplexer_181_hbokq6i
   Instantiated as:
   > rsp_demux in hps_platform_altera_mm_interconnect_181_gyspmpy
   > rsp_demux_001 in hps_platform_altera_mm_interconnect_181_gyspmpy
   > rsp_demux_002 in hps_platform_altera_mm_interconnect_181_gyspmpy
-[+] hps_platform_altera_merlin_demultiplexer_181_lb5swli 
+[+] hps_platform_altera_merlin_demultiplexer_181_lb5swli
   Instantiated as:
   > cmd_demux in hps_platform_altera_mm_interconnect_181_vq4lfjq
   > cmd_demux_001 in hps_platform_altera_mm_interconnect_181_vq4lfjq
-[+] hps_platform_altera_merlin_demultiplexer_181_ogrmh6y 
+[+] hps_platform_altera_merlin_demultiplexer_181_ogrmh6y
   Instantiated as:
   > rsp_demux_009 in hps_platform_altera_mm_interconnect_181_4jcth3q
-[+] hps_platform_altera_merlin_demultiplexer_181_vogcpii 
+[+] hps_platform_altera_merlin_demultiplexer_181_vogcpii
   Instantiated as:
   > rsp_demux in hps_platform_altera_mm_interconnect_181_vq4lfjq
-[+] hps_platform_altera_merlin_multiplexer_180_aogbhry 
+[+] hps_platform_altera_merlin_multiplexer_180_aogbhry
   Instantiated as:
   > cmd_mux in hps_platform_altera_mm_interconnect_180_kxr6xra
   > cmd_mux_001 in hps_platform_altera_mm_interconnect_180_kxr6xra
-[+] hps_platform_altera_merlin_multiplexer_180_n6zzczq 
+[+] hps_platform_altera_merlin_multiplexer_180_n6zzczq
   Instantiated as:
   > rsp_mux in hps_platform_altera_mm_interconnect_180_kxr6xra
   > rsp_mux_001 in hps_platform_altera_mm_interconnect_180_kxr6xra
-[+] hps_platform_altera_merlin_multiplexer_181_6evmzai 
+[+] hps_platform_altera_merlin_multiplexer_181_6evmzai
   Instantiated as:
   > cmd_mux in hps_platform_altera_mm_interconnect_181_vq4lfjq
-[+] hps_platform_altera_merlin_multiplexer_181_72fgzqa 
+[+] hps_platform_altera_merlin_multiplexer_181_72fgzqa
   Instantiated as:
   > rsp_mux in hps_platform_altera_mm_interconnect_181_vq4lfjq
   > rsp_mux_001 in hps_platform_altera_mm_interconnect_181_vq4lfjq
-[+] hps_platform_altera_merlin_multiplexer_181_dx3w2qq 
+[+] hps_platform_altera_merlin_multiplexer_181_dx3w2qq
   Instantiated as:
   > rsp_mux in hps_platform_altera_mm_interconnect_181_gyspmpy
-[+] hps_platform_altera_merlin_multiplexer_181_kbevdia 
+[+] hps_platform_altera_merlin_multiplexer_181_kbevdia
   Instantiated as:
   > cmd_mux in hps_platform_altera_mm_interconnect_181_4jcth3q
   > cmd_mux_001 in hps_platform_altera_mm_interconnect_181_4jcth3q
@@ -1895,57 +1892,57 @@
   > cmd_mux_007 in hps_platform_altera_mm_interconnect_181_4jcth3q
   > cmd_mux_008 in hps_platform_altera_mm_interconnect_181_4jcth3q
   > cmd_mux_009 in hps_platform_altera_mm_interconnect_181_4jcth3q
-[+] hps_platform_altera_merlin_multiplexer_181_nkbmrtq 
+[+] hps_platform_altera_merlin_multiplexer_181_nkbmrtq
   Instantiated as:
   > rsp_mux in hps_platform_altera_mm_interconnect_181_4jcth3q
   > rsp_mux_001 in hps_platform_altera_mm_interconnect_181_4jcth3q
-[+] hps_platform_altera_merlin_multiplexer_181_sx6662a 
+[+] hps_platform_altera_merlin_multiplexer_181_sx6662a
   Instantiated as:
   > cmd_mux in hps_platform_altera_mm_interconnect_181_gyspmpy
   > cmd_mux_001 in hps_platform_altera_mm_interconnect_181_gyspmpy
   > cmd_mux_002 in hps_platform_altera_mm_interconnect_181_gyspmpy
-[+] hps_platform_altera_merlin_router_180_6yqffvy 
+[+] hps_platform_altera_merlin_router_180_6yqffvy
   Instantiated as:
   > router_002 in hps_platform_altera_mm_interconnect_180_kxr6xra
   > router_003 in hps_platform_altera_mm_interconnect_180_kxr6xra
-[+] hps_platform_altera_merlin_router_180_6yqffvy_default_decode 
+[+] hps_platform_altera_merlin_router_180_6yqffvy_default_decode
   Instantiated as:
   > the_default_decode in hps_platform_altera_merlin_router_180_6yqffvy
-[+] hps_platform_altera_merlin_router_180_ff5dmuy 
+[+] hps_platform_altera_merlin_router_180_ff5dmuy
   Instantiated as:
   > router in hps_platform_altera_mm_interconnect_180_kxr6xra
   > router_001 in hps_platform_altera_mm_interconnect_180_kxr6xra
-[+] hps_platform_altera_merlin_router_180_ff5dmuy_default_decode 
+[+] hps_platform_altera_merlin_router_180_ff5dmuy_default_decode
   Instantiated as:
   > the_default_decode in hps_platform_altera_merlin_router_180_ff5dmuy
-[+] hps_platform_altera_merlin_router_181_appkcii 
+[+] hps_platform_altera_merlin_router_181_appkcii
   Instantiated as:
   > router_001 in hps_platform_altera_mm_interconnect_181_gyspmpy
   > router_002 in hps_platform_altera_mm_interconnect_181_gyspmpy
   > router_003 in hps_platform_altera_mm_interconnect_181_gyspmpy
-[+] hps_platform_altera_merlin_router_181_appkcii_default_decode 
+[+] hps_platform_altera_merlin_router_181_appkcii_default_decode
   Instantiated as:
   > the_default_decode in hps_platform_altera_merlin_router_181_appkcii
-[+] hps_platform_altera_merlin_router_181_c4v2jzq 
+[+] hps_platform_altera_merlin_router_181_c4v2jzq
   Instantiated as:
   > router in hps_platform_altera_mm_interconnect_181_gyspmpy
-[+] hps_platform_altera_merlin_router_181_c4v2jzq_default_decode 
+[+] hps_platform_altera_merlin_router_181_c4v2jzq_default_decode
   Instantiated as:
   > the_default_decode in hps_platform_altera_merlin_router_181_c4v2jzq
-[+] hps_platform_altera_merlin_router_181_gfcf7dy 
+[+] hps_platform_altera_merlin_router_181_gfcf7dy
   Instantiated as:
   > router in hps_platform_altera_mm_interconnect_181_4jcth3q
   > router_001 in hps_platform_altera_mm_interconnect_181_4jcth3q
-[+] hps_platform_altera_merlin_router_181_gfcf7dy_default_decode 
+[+] hps_platform_altera_merlin_router_181_gfcf7dy_default_decode
   Instantiated as:
   > the_default_decode in hps_platform_altera_merlin_router_181_gfcf7dy
-[+] hps_platform_altera_merlin_router_181_ofetbfq 
+[+] hps_platform_altera_merlin_router_181_ofetbfq
   Instantiated as:
   > router_002 in hps_platform_altera_mm_interconnect_181_vq4lfjq
-[+] hps_platform_altera_merlin_router_181_ofetbfq_default_decode 
+[+] hps_platform_altera_merlin_router_181_ofetbfq_default_decode
   Instantiated as:
   > the_default_decode in hps_platform_altera_merlin_router_181_ofetbfq
-[+] hps_platform_altera_merlin_router_181_smxvh4y 
+[+] hps_platform_altera_merlin_router_181_smxvh4y
   Instantiated as:
   > router_002 in hps_platform_altera_mm_interconnect_181_4jcth3q
   > router_003 in hps_platform_altera_mm_interconnect_181_4jcth3q
@@ -1957,75 +1954,75 @@
   > router_009 in hps_platform_altera_mm_interconnect_181_4jcth3q
   > router_010 in hps_platform_altera_mm_interconnect_181_4jcth3q
   > router_011 in hps_platform_altera_mm_interconnect_181_4jcth3q
-[+] hps_platform_altera_merlin_router_181_smxvh4y_default_decode 
+[+] hps_platform_altera_merlin_router_181_smxvh4y_default_decode
   Instantiated as:
   > the_default_decode in hps_platform_altera_merlin_router_181_smxvh4y
-[+] hps_platform_altera_merlin_router_181_zf4ffdi 
+[+] hps_platform_altera_merlin_router_181_zf4ffdi
   Instantiated as:
   > router in hps_platform_altera_mm_interconnect_181_vq4lfjq
   > router_001 in hps_platform_altera_mm_interconnect_181_vq4lfjq
-[+] hps_platform_altera_merlin_router_181_zf4ffdi_default_decode 
+[+] hps_platform_altera_merlin_router_181_zf4ffdi_default_decode
   Instantiated as:
   > the_default_decode in hps_platform_altera_merlin_router_181_zf4ffdi
-[+] hps_platform_altera_mm_interconnect_180_kxr6xra 
+[+] hps_platform_altera_mm_interconnect_180_kxr6xra
   Instantiated as:
   > mm_interconnect_0 in hps_platform (rtl) (rtl) (rtl)
-[+] hps_platform_altera_mm_interconnect_181_4jcth3q 
+[+] hps_platform_altera_mm_interconnect_181_4jcth3q
   Instantiated as:
   > mm_interconnect_1 in hps_platform (rtl) (rtl) (rtl)
-[+] hps_platform_altera_mm_interconnect_181_gyspmpy 
+[+] hps_platform_altera_mm_interconnect_181_gyspmpy
   Instantiated as:
   > mm_interconnect_0 in hps_platform_system_info_subsys_10_siwlkji (rtl)
-[+] hps_platform_altera_mm_interconnect_181_rr2d6da 
+[+] hps_platform_altera_mm_interconnect_181_rr2d6da
   Instantiated as:
   > mm_interconnect_1 in hps_platform (rtl) (rtl) (rtl)
-[+] hps_platform_altera_mm_interconnect_181_tigbpvy 
+[+] hps_platform_altera_mm_interconnect_181_tigbpvy
   Instantiated as:
   > mm_interconnect_0 in hps_platform (rtl) (rtl) (rtl)
-[+] hps_platform_altera_mm_interconnect_181_vq4lfjq 
+[+] hps_platform_altera_mm_interconnect_181_vq4lfjq
   Instantiated as:
   > mm_interconnect_0 in hps_platform (rtl) (rtl) (rtl)
-[+] hps_platform_altera_voltage_sensor_181_lqrtvma 
+[+] hps_platform_altera_voltage_sensor_181_lqrtvma
   Instantiated as:
   > voltage_sensor_0 in hps_platform_system_info_subsys_10_siwlkji (rtl)
-[+] hps_platform_error_adapter_180_ww4pkiq 
+[+] hps_platform_error_adapter_180_ww4pkiq
   Instantiated as:
   > error_adapter_0 in hps_platform_altera_avalon_st_adapter_180_s4hdtvi
-[+] hps_platform_error_adapter_181_6bjmpii 
+[+] hps_platform_error_adapter_181_6bjmpii
   Instantiated as:
   > error_adapter_0 in hps_platform_altera_avalon_st_adapter_181_ynq6atq
-[+] hps_platform_measurement_fifo_10_6moa65y 
+[+] hps_platform_measurement_fifo_10_6moa65y
   Instantiated as:
   > measurement_fifo_0 in hps_platform (rtl) (rtl) (rtl)
-[+] hps_platform_system_info_subsys_10_ieibhaa 
+[+] hps_platform_system_info_subsys_10_ieibhaa
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
-    |-> arria10_chip_id_0: altera_arria10_chip_id 
+    |-> arria10_chip_id_0: altera_arria10_chip_id
     |-> system_info_0: sysinfo  (rtl) (rtl) (rtl)
-    |-> temp_sense_0: altera_temp_sense 
+    |-> temp_sense_0: altera_temp_sense
   Instantiated as:
   > system_info_subsys in hps_platform (rtl) (rtl) (rtl)
-[+] hps_platform_system_info_subsys_10_siwlkji 
+[+] hps_platform_system_info_subsys_10_siwlkji
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
-    |-> arria10_chip_id_0: altera_arria10_chip_id 
-    |-> mm_bridge_0: altera_avalon_mm_bridge 
+    |-> arria10_chip_id_0: altera_arria10_chip_id
+    |-> mm_bridge_0: altera_avalon_mm_bridge
     |-> system_info_0: sysinfo  (rtl) (rtl) (rtl)
-    |-> temp_sense_0: altera_temp_sense 
-    |-> voltage_sensor_0: hps_platform_altera_voltage_sensor_181_lqrtvma 
-    |-> mm_interconnect_0: hps_platform_altera_mm_interconnect_181_gyspmpy 
+    |-> temp_sense_0: altera_temp_sense
+    |-> voltage_sensor_0: hps_platform_altera_voltage_sensor_181_lqrtvma
+    |-> mm_interconnect_0: hps_platform_altera_mm_interconnect_181_gyspmpy
   Instantiated as:
   > system_info_subsys in hps_platform (rtl) (rtl) (rtl)
   > system_info_subsys in hps_platform (rtl) (rtl) (rtl)
-[+] ident 
+[+] ident
   Architectures:
   {+} imp
     Subcomponent hierarchy:
   Instantiated as:
   > ident_1 in ext_trigger (struct)
-[+] ident_gen 
+[+] ident_gen
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2042,13 +2039,13 @@
     Subcomponent hierarchy:
     |-> DUT: ident_gen  (rtl)
   Instantiated as:
-[+] ident_trigger 
+[+] ident_trigger
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
   Instantiated as:
   > ident_1 in tx_trigger (rtl)
-[+] if_gen 
+[+] if_gen
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2058,20 +2055,20 @@
   > CH2_IF in dac_src_mgmt (rtl)
   > CH3_IF in dac_src_mgmt (rtl)
   > TONE_GEN in test_sig_gen (rtl)
-[+] if_nco 
+[+] if_nco
   Architectures:
   {+} rtl
   {+} rtl
   {+} rtl
     Subcomponent hierarchy:
-    |-> nco_ii_0: if_nco_altera_nco_ii_181_vs2do2i 
-    |-> nco_ii_0: if_nco_altera_nco_ii_181_vs2do2i 
-    |-> nco_ii_0: if_nco_altera_nco_ii_181_vs2do2i 
+    |-> nco_ii_0: if_nco_altera_nco_ii_181_vs2do2i
+    |-> nco_ii_0: if_nco_altera_nco_ii_181_vs2do2i
+    |-> nco_ii_0: if_nco_altera_nco_ii_181_vs2do2i
   Instantiated as:
   > if_nco_1 in if_gen (rtl)
   > DUT in test_nco_tb (testbench)
   > NCO_IP_CORE in nco_core (rtl)
-[+] if_nco_altera_nco_ii_181_vs2do2i 
+[+] if_nco_altera_nco_ii_181_vs2do2i
   Instantiated as:
   > nco_ii_0 in if_nco (rtl) (rtl) (rtl)
   > u1 in if_nco_altera_nco_ii_181_vs2do2i_tb (tb)
@@ -2081,9 +2078,9 @@
   Architectures:
   {+} tb
     Subcomponent hierarchy:
-    |-> u1: if_nco_altera_nco_ii_181_vs2do2i 
+    |-> u1: if_nco_altera_nco_ii_181_vs2do2i
   Instantiated as:
-[+] instantiated_with_wrong_parameters_error_see_comment_above 
+[+] instantiated_with_wrong_parameters_error_see_comment_above
   Instantiated as:
   > f2s_width_check in hps_platform_altera_arria10_hps_181_tgjwrna
   > s2f_width_check in hps_platform_altera_arria10_hps_181_tgjwrna
@@ -2124,7 +2121,7 @@
   > outusevalid_check in hps_platform_altera_avalon_st_adapter_180_s4hdtvi
   > outuseready_check in hps_platform_altera_avalon_st_adapter_180_s4hdtvi
   > outreadylatency_check in hps_platform_altera_avalon_st_adapter_180_s4hdtvi
-[+] interpolation_cic 
+[+] interpolation_cic
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2143,7 +2140,7 @@
     Subcomponent hierarchy:
     |-> DUT: interpolation_cic  (rtl)
   Instantiated as:
-[+] interrogateAA 
+[+] interrogateAA
   Architectures:
   {+} fsm
   {+} fsm
@@ -2151,15 +2148,15 @@
   Instantiated as:
   > interrogateAA_1 in pulse_timer (struct) (struct)
   > U_0 in pulse_timer (struct) (struct)
-[+] iopll_bootstrap 
+[+] iopll_bootstrap
   Instantiated as:
   > inst_iopll_bootstrap in altera_emif_arch_nf_pll
   > inst_iopll_bootstrap in altera_emif_arch_nf_pll
-[+] jtag 
+[+] jtag
   Instantiated as:
   > jtag_inst in altera_chip_id_a10
   > jtag_inst in altera_chip_id_a10
-[+] loc_9717_gen 
+[+] loc_9717_gen
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2175,7 +2172,7 @@
     Subcomponent hierarchy:
     |-> DUT: loc_9717_gen  (rtl)
   Instantiated as:
-[+] loc_gs_gen 
+[+] loc_gs_gen
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2200,7 +2197,7 @@
     |-> if_gen_1: nco  (rtl)
     |-> mult_unsign_1: mult_sign_unsign  (rtl)
   Instantiated as:
-[+] m_b_gen 
+[+] m_b_gen
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2222,7 +2219,7 @@
     |-> if_gen_1: nco  (rtl)
     |-> mult_unsign_1: mult_sign_unsign  (rtl)
   Instantiated as:
-[+] meas_fifo_ram_32x16k 
+[+] meas_fifo_ram_32x16k
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2236,7 +2233,7 @@
     Subcomponent hierarchy:
     |-> DUT: meas_fifo_ram_32x16k  (rtl)
   Instantiated as:
-[+] measurement_fifo 
+[+] measurement_fifo
   Architectures:
   {+} rtl
   {+} rtl
@@ -2248,7 +2245,7 @@
   Instantiated as:
   > measurement_fifo_0 in hps_platform (rtl) (rtl) (rtl)
   > measurement_fifo_1 in measurement_fifo_tb (behavioral)
-[+] measurement_fifo_ctrl 
+[+] measurement_fifo_ctrl
   Architectures:
   {+} rtl
   {+} rtl
@@ -2262,11 +2259,11 @@
     Subcomponent hierarchy:
     |-> measurement_fifo_1: measurement_fifo  (rtl) (rtl)
   Instantiated as:
-[+] mem_array_abphy 
+[+] mem_array_abphy
   Instantiated as:
   > mem_array_abphy_inst in altera_emif_arch_nf_io_tiles_abphy
   > mem_array_abphy_inst in altera_emif_arch_nf_io_tiles_abphy
-[+] memory_pointer_controller 
+[+] memory_pointer_controller
   Instantiated as:
   > reorder_memory_pointer_controller in altera_merlin_reorder_memory
   > reorder_memory_pointer_controller in altera_merlin_reorder_memory
@@ -2275,7 +2272,7 @@
   {+} arch
     Subcomponent hierarchy:
   Instantiated as:
-[+] mode_c_reply_gen 
+[+] mode_c_reply_gen
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2283,7 +2280,7 @@
   > mode_c_reply_gen_1 in xpdr_source_top (rtl)
   > mode_c_reply_gen_1 in pulse_encoder_top (rtl)
   > DUT in mode_c_reply_gen_tb (behavioral)
-[+] mode_c_reply_gen_ORIGINAL 
+[+] mode_c_reply_gen_ORIGINAL
   Architectures:
   {+} fsm
     Subcomponent hierarchy:
@@ -2301,7 +2298,7 @@
   {+} arc
     Subcomponent hierarchy:
   Instantiated as:
-[+] mode_s_interr_dec_new 
+[+] mode_s_interr_dec_new
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2316,7 +2313,7 @@
     |-> mode_s_interr_det_1: mode_s_interr_det  (rtl)
     |-> DUT: mode_s_interr_dec_new  (rtl)
   Instantiated as:
-[+] mode_s_interr_det 
+[+] mode_s_interr_det
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2324,7 +2321,7 @@
   > mode_s_interr_det_1 in mode_s_interr_dec_new_tb (behavioral)
   > mode_s_interr_det_1 in mode_s_interr_det_new_tb (behavioral)
   > MODE_S_INTERR_DETECTOR in pulse_decoder (rtl) (rtl)
-[+] mode_s_interr_det_new 
+[+] mode_s_interr_det_new
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2338,7 +2335,7 @@
     |-> DUT: mode_s_interr_det_new  (rtl)
     |-> mode_s_interr_det_1: mode_s_interr_det  (rtl)
   Instantiated as:
-[+] mode_s_reply_dec 
+[+] mode_s_reply_dec
   Architectures:
   {+} rtl
   {+} rtl
@@ -2354,7 +2351,7 @@
     |-> DUT: mode_s_reply_dec  (rtl) (rtl)
     |-> DUT2: mode_s_reply_det  (rtl)
   Instantiated as:
-[+] mode_s_reply_det 
+[+] mode_s_reply_det
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2362,21 +2359,21 @@
   > DUT2 in mode_s_reply_dec_tb (testbench)
   > MODE_S_REPLY_DETECTOR in pulse_decoder (rtl) (rtl)
   > MODE_S_REPLY_DETECTOR in pulse_decoder (rtl) (rtl)
-[+] mode_select 
+[+] mode_select
   Instantiated as:
   > DUT in mode_select_tb (testbench)
 [+] mode_select_tb (top)
   Architectures:
   {+} testbench
     Subcomponent hierarchy:
-    |-> DUT: mode_select 
+    |-> DUT: mode_select
     |-> ident_gen_1: ident_gen  (rtl)
     |-> loc_gs_gen_1: loc_gs_gen  (rtl)
     |-> m_b_gen_1: m_b_gen  (rtl)
     |-> selcal_gen_1: selcal_gen  (rtl)
     |-> vor_gen_1: vor_gen  (rtl)
   Instantiated as:
-[+] moving_avg 
+[+] moving_avg
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2390,7 +2387,7 @@
     Subcomponent hierarchy:
     |-> DUT: moving_avg  (rtl)
   Instantiated as:
-[+] mrb_timer_new 
+[+] mrb_timer_new
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2401,7 +2398,7 @@
   {+} rtl
     Subcomponent hierarchy:
   Instantiated as:
-[+] mult_sign_unsign 
+[+] mult_sign_unsign
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2433,7 +2430,7 @@
     Subcomponent hierarchy:
     |-> DUT: mult_sign_unsign  (rtl)
   Instantiated as:
-[+] mult_unsign 
+[+] mult_unsign
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2445,7 +2442,7 @@
     Subcomponent hierarchy:
     |-> DUT: mult_unsign  (rtl)
   Instantiated as:
-[+] navcomm_source_top 
+[+] navcomm_source_top
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2456,7 +2453,7 @@
     |-> selcal_gen_1: selcal_gen  (rtl)
   Instantiated as:
   > navcomm_source_top_1 in transmit_top (rtl)
-[+] nco 
+[+] nco
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2472,7 +2469,7 @@
   > gen_30hz_var in vor_gen (rtl)
   > gen_9960hz in vor_gen (rtl)
   > DUT in nco_tb (testbench)
-[+] nco_core 
+[+] nco_core
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2483,14 +2480,14 @@
   > nco_3000hz in m_b_gen (rtl)
   > nco_core_1 in selcal_gen (rtl)
   > nco_core_2 in selcal_gen (rtl)
-[+] nco_fm 
+[+] nco_fm
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
     |-> VOR_NCO_LUT: data_lut  (arch) (arch) (sim)
   Instantiated as:
   > gen_30hz_ref in vor_gen (rtl)
-[+] nco_lut 
+[+] nco_lut
   Architectures:
   {+} arch
     Subcomponent hierarchy:
@@ -2502,7 +2499,7 @@
     Subcomponent hierarchy:
     |-> DUT: nco  (rtl)
   Instantiated as:
-[+] oversampler 
+[+] oversampler
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2512,7 +2509,7 @@
   > CH3_OS in dac_src_mgmt (rtl)
   > CH2_OS in loc_gs_gen_tb (testbench)
   > CH2_OS in m_b_gen_tb (testbench)
-[+] peak_detect 
+[+] peak_detect
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2525,13 +2522,13 @@
     Subcomponent hierarchy:
     |-> DUT: peak_detect  (rtl)
   Instantiated as:
-[+] phi_diff 
+[+] phi_diff
   Architectures:
   {+} arch
     Subcomponent hierarchy:
   Instantiated as:
   > PHASE_2_FREQ in uat_rx_demod (rtl)
-[+] phi_diff2 
+[+] phi_diff2
   Architectures:
   {+} arch
     Subcomponent hierarchy:
@@ -2540,21 +2537,21 @@
   > PH_2_FREQ in rx_dsp_top_lf (rtl)
   > phi_diff2_1 in fsk_detect_top (arch)
   > DUT2 in theta_gen_tb (testbench)
-[+] pipelined_log_shifter 
+[+] pipelined_log_shifter
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
   Instantiated as:
   > shifter in decimation_cic (rtl)
   > shifter in interpolation_cic (rtl)
-[+] power_detect 
+[+] power_detect
   Architectures:
   {+} arch
     Subcomponent hierarchy:
   Instantiated as:
   > PWR_DET in fsk_detect_top (arch)
   > PWR_DET in uat_rx_demod (rtl)
-[+] pulse_decoder 
+[+] pulse_decoder
   Architectures:
   {+} rtl
   {+} rtl
@@ -2600,7 +2597,7 @@
     |-> tacan_freq_gen_1: tacan_freq_gen  (rtl)
     |-> mode_c_reply_gen_1: mode_c_reply_gen  (rtl)
   Instantiated as:
-[+] pulse_test 
+[+] pulse_test
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2613,7 +2610,7 @@
     Subcomponent hierarchy:
     |-> DUT: pulse_test  (rtl)
   Instantiated as:
-[+] pulse_timer 
+[+] pulse_timer
   Architectures:
   {+} struct
   {+} struct
@@ -2628,7 +2625,7 @@
     |-> U_5: tacan_ident  (fsm) (rtl)
   Instantiated as:
   > pulse_timer_1 in ext_trigger (struct)
-[+] pwm_control 
+[+] pwm_control
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2640,7 +2637,7 @@
     Subcomponent hierarchy:
     |-> DUT: pwm_control  (rtl)
   Instantiated as:
-[+] quadrature_mixer 
+[+] quadrature_mixer
   Architectures:
   {+} arch
     Subcomponent hierarchy:
@@ -2650,13 +2647,13 @@
   > COMPLEX_MIX in rx_dsp_top (rtl)
   > COMPLEX_MIX in rx_dsp_top_lf (rtl)
   > COMPLEX_MIX in uat_rx_demod (rtl)
-[+] range_delay 
+[+] range_delay
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
   Instantiated as:
   > range_delay_1 in tx_trigger (rtl)
-[+] range_sweep 
+[+] range_sweep
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2676,7 +2673,7 @@
     Subcomponent hierarchy:
     |-> DUT: rx_dsp_top_lf  (rtl)
   Instantiated as:
-[+] receiver_top 
+[+] receiver_top
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2685,7 +2682,7 @@
     |-> pulse_decoder_1: pulse_decoder  (rtl) (rtl)
   Instantiated as:
   > receiver_top_1 in rx_tx_top (rtl)
-[+] reply_window 
+[+] reply_window
   Architectures:
   {+} fsm
     Subcomponent hierarchy:
@@ -2698,7 +2695,7 @@
     Subcomponent hierarchy:
     |-> ad7689_driver_1: ad7689_driver  (rtl)
   Instantiated as:
-[+] rx_dsp_top 
+[+] rx_dsp_top
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2711,7 +2708,7 @@
     |-> PH_2_FREQ: phi_diff2  (arch)
   Instantiated as:
   > rx_dsp_top_1 in receiver_top (rtl)
-[+] rx_dsp_top_lf 
+[+] rx_dsp_top_lf
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2726,7 +2723,7 @@
   Instantiated as:
   > DUT in receiver_tb (behavioral)
   > rx_dsp_top_lf_1 in receiver_top (rtl)
-[+] rx_tx_top 
+[+] rx_tx_top
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2734,20 +2731,20 @@
     |-> transmit_top_1: transmit_top  (rtl)
   Instantiated as:
   > rx_tx_top_1 in firefly_fpga_top (rtl)
-[+] s2f_rl_adp 
+[+] s2f_rl_adp
   Instantiated as:
   > s2f_rl_adp_ins in twentynm_hps_rl_interface_hps2fpga
   > s2f_rl_adp_inst in twentynm_hps_rl_interface_hps2fpga_light_weight
   > s2f_rl_adp_ins in twentynm_hps_rl_interface_hps2fpga
   > s2f_rl_adp_inst in twentynm_hps_rl_interface_hps2fpga_light_weight
-[+] sample_sync 
+[+] sample_sync
   Architectures:
   {+} arch
     Subcomponent hierarchy:
   Instantiated as:
   > SYNCH in fsk_demod_top (rtl)
   > SAMPLER in uat_rx_demod (rtl)
-[+] selcal_gen 
+[+] selcal_gen
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2765,18 +2762,18 @@
     Subcomponent hierarchy:
     |-> DUT: selcal_gen  (rtl)
   Instantiated as:
-[+] sequencer 
+[+] sequencer
   Architectures:
   {+} arch
     Subcomponent hierarchy:
   Instantiated as:
   > sequencer_1 in tacan_freq_gen (rtl)
   > sequencer_2 in tacan_freq_gen (rtl)
-[+] sop_reg 
+[+] sop_reg
   Instantiated as:
   > sop in if_nco_altera_nco_ii_181_vs2do2i
   > sop in if_nco_altera_nco_ii_181_vs2do2i
-[+] spi_master 
+[+] spi_master
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2798,7 +2795,7 @@
     |-> DUT_MASTER_11: spi_master  (rtl)
     |-> DUT_SLAVE_11: spi_slave  (rtl)
   Instantiated as:
-[+] spi_slave 
+[+] spi_slave
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2812,7 +2809,7 @@
   {+} rtl
     Subcomponent hierarchy:
   Instantiated as:
-[+] sysinfo 
+[+] sysinfo
   Architectures:
   {+} rtl
   {+} rtl
@@ -2821,7 +2818,7 @@
   Instantiated as:
   > system_info_0 in hps_platform_system_info_subsys_10_siwlkji (rtl)
   > system_info_0 in hps_platform_system_info_subsys_10_ieibhaa (rtl)
-[+] tacan_ce_gen 
+[+] tacan_ce_gen
   Architectures:
   {+} struct
   {+} arch
@@ -2829,14 +2826,14 @@
   Instantiated as:
   > tacan_ce_gen_1 in tacan_freq_gen (rtl)
   > tacan_ce_gen_1 in tacan_wave_sel_tb (behavioral)
-[+] tacan_detect 
+[+] tacan_detect
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
   Instantiated as:
   > TACAN_DET in pulse_decoder (rtl) (rtl)
   > TACAN_DET in pulse_decoder (rtl) (rtl)
-[+] tacan_freq_gen 
+[+] tacan_freq_gen
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2858,7 +2855,7 @@
     |-> MRB_trigger_1: MRB_trigger  (fsm)
     |-> ARB_trigger_1: ARB_trigger  (fsm)
   Instantiated as:
-[+] tacan_ident 
+[+] tacan_ident
   Architectures:
   {+} fsm
   {+} rtl
@@ -2866,25 +2863,25 @@
   Instantiated as:
   > tacan_ident_1 in pulse_timer (struct) (struct)
   > U_5 in pulse_timer (struct) (struct)
-[+] tacan_lut 
+[+] tacan_lut
   Architectures:
   {+} arch
     Subcomponent hierarchy:
   Instantiated as:
   > tacan_lut_1 in tacan_freq_gen (rtl)
-[+] tacan_reply_det 
+[+] tacan_reply_det
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
   Instantiated as:
   > TACAN_REPLY_DETECT in pulse_decoder (rtl) (rtl)
-[+] tacan_reply_det_new 
+[+] tacan_reply_det_new
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
   Instantiated as:
   > tacan_reply_det_new_1 in pulse_decoder (rtl) (rtl)
-[+] tacan_wave_sel 
+[+] tacan_wave_sel
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2902,9 +2899,9 @@
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
-    |-> tacanpll_inst: tacanpll_0002 
+    |-> tacanpll_inst: tacanpll_0002
   Instantiated as:
-[+] tacanpll_0002 
+[+] tacanpll_0002
   Instantiated as:
   > tacanpll_inst in tacanpll (rtl)
 [+] test_nco_tb (top)
@@ -2913,14 +2910,14 @@
     Subcomponent hierarchy:
     |-> DUT: if_nco  (rtl) (rtl) (rtl)
   Instantiated as:
-[+] test_sig_gen 
+[+] test_sig_gen
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
     |-> TONE_GEN: if_gen  (rtl)
   Instantiated as:
   > TEST_WAVE_GEN in navcomm_source_top (rtl)
-[+] theta_gen 
+[+] theta_gen
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2936,9 +2933,9 @@
     Subcomponent hierarchy:
     |-> DUT: theta_gen  (rtl)
     |-> DUT2: phi_diff2  (arch)
-    |-> DUT3: cordic_p2r 
+    |-> DUT3: cordic_p2r
   Instantiated as:
-[+] ticktimer_ctrl 
+[+] ticktimer_ctrl
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2951,13 +2948,13 @@
     Subcomponent hierarchy:
     |-> DUT: ticktimer_ctrl  (rtl)
   Instantiated as:
-[+] time_trigger 
+[+] time_trigger
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
   Instantiated as:
   > time_trigger_1 in tx_trigger (rtl)
-[+] transmit_top 
+[+] transmit_top
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -2966,7 +2963,7 @@
     |-> dac_src_mgmt_1: dac_src_mgmt  (rtl)
   Instantiated as:
   > transmit_top_1 in rx_tx_top (rtl)
-[+] twentynm_clkena 
+[+] twentynm_clkena
   Instantiated as:
   > emif_usr_clk_buf in altera_emif_arch_nf_core_clks_rsts
   > emif_usr_half_clk_buf in altera_emif_arch_nf_core_clks_rsts
@@ -2988,7 +2985,7 @@
   > afi_half_clk_buf in altera_emif_arch_nf_core_clks_rsts
   > afi_clk_buf in altera_emif_arch_nf_core_clks_rsts
   > clkena in altera_oct_um_fsm
-[+] twentynm_ddio_in 
+[+] twentynm_ddio_in
   Instantiated as:
   > buffer_data_in_fr_ddio in altera_gpio_one_bit
   > buffer_data_in_hr_ddio_0 in altera_gpio_one_bit
@@ -3002,7 +2999,7 @@
   > buffer_data_in_fr_ddio in altera_gpio_one_bit
   > buffer_data_in_hr_ddio_0 in altera_gpio_one_bit
   > buffer_data_in_hr_ddio_1 in altera_gpio_one_bit
-[+] twentynm_ddio_out 
+[+] twentynm_ddio_out
   Instantiated as:
   > iodout_hr_ddio_0 in altera_gpio_one_bit
   > iodout_hr_ddio_1 in altera_gpio_one_bit
@@ -3020,27 +3017,27 @@
   > iodout_hr_ddio_1 in altera_gpio_one_bit
   > fr_out_data_ddio in altera_gpio_one_bit
   > oe_in_hr_ddio in altera_gpio_one_bit
-[+] twentynm_hps_interface_boot_from_fpga 
+[+] twentynm_hps_interface_boot_from_fpga
   Instantiated as:
   > boot_from_fpga in hps_platform_altera_arria10_interface_generator_140_v2xnp4q
   > boot_from_fpga in hps_platform_altera_arria10_interface_generator_140_vassg6i
-[+] twentynm_hps_interface_clocks_resets 
+[+] twentynm_hps_interface_clocks_resets
   Instantiated as:
   > clocks_resets in hps_platform_altera_arria10_interface_generator_140_v2xnp4q
   > clocks_resets in hps_platform_altera_arria10_interface_generator_140_vassg6i
-[+] twentynm_hps_interface_dbg_apb 
+[+] twentynm_hps_interface_dbg_apb
   Instantiated as:
   > debug_apb in hps_platform_altera_arria10_interface_generator_140_v2xnp4q
   > debug_apb in hps_platform_altera_arria10_interface_generator_140_vassg6i
-[+] twentynm_hps_interface_ddr 
+[+] twentynm_hps_interface_ddr
   Instantiated as:
   > refatom in hps_emif_interface_to_ddr
   > refatom in hps_emif_interface_to_ddr
-[+] twentynm_hps_interface_fpga2hps 
+[+] twentynm_hps_interface_fpga2hps
   Instantiated as:
   > fpga2hps_rl in twentynm_hps_rl_interface_fpga2hps
   > fpga2hps_rl in twentynm_hps_rl_interface_fpga2hps
-[+] twentynm_hps_interface_fpga2sdram 
+[+] twentynm_hps_interface_fpga2sdram
   Instantiated as:
   > fpga2sdram_0_instance in twentynm_hps_rl_mode0_fpga2sdram
   > fpga2sdram_1_instance in twentynm_hps_rl_mode1_fpga2sdram
@@ -3054,80 +3051,80 @@
   > fpga2sdram_3_instance in twentynm_hps_rl_mode3_fpga2sdram
   > fpga2sdram_0es_instance in twentynm_hps_rl_mode0es_fpga2sdram
   > fpga2sdram_1es_instance in twentynm_hps_rl_mode1es_fpga2sdram
-[+] twentynm_hps_interface_hps2fpga 
+[+] twentynm_hps_interface_hps2fpga
   Instantiated as:
   > hps2fpga_rl in twentynm_hps_rl_interface_hps2fpga
   > hps2fpga_rl in twentynm_hps_rl_interface_hps2fpga
-[+] twentynm_hps_interface_hps2fpga_light_weight 
+[+] twentynm_hps_interface_hps2fpga_light_weight
   Instantiated as:
   > hps2fpga_lw_rl in twentynm_hps_rl_interface_hps2fpga_light_weight
   > hps2fpga_lw_rl in twentynm_hps_rl_interface_hps2fpga_light_weight
-[+] twentynm_hps_interface_interrupts 
+[+] twentynm_hps_interface_interrupts
   Instantiated as:
   > interrupts in hps_platform_altera_arria10_interface_generator_140_v2xnp4q
   > interrupts in hps_platform_altera_arria10_interface_generator_140_vassg6i
-[+] twentynm_hps_interface_mpu_event_standby 
+[+] twentynm_hps_interface_mpu_event_standby
   Instantiated as:
   > mpu_events in hps_platform_altera_arria10_interface_generator_140_v2xnp4q
   > mpu_events in hps_platform_altera_arria10_interface_generator_140_vassg6i
-[+] twentynm_hps_interface_peripheral_emac 
+[+] twentynm_hps_interface_peripheral_emac
   Instantiated as:
   > peripheral_emac0 in hps_platform_altera_arria10_interface_generator_140_v2xnp4q
   > peripheral_emac1 in hps_platform_altera_arria10_interface_generator_140_v2xnp4q
-[+] twentynm_hps_interface_peripheral_i2c 
+[+] twentynm_hps_interface_peripheral_i2c
   Instantiated as:
   > peripheral_i2c0 in hps_platform_altera_arria10_interface_generator_140_v2xnp4q
   > peripheral_i2c1 in hps_platform_altera_arria10_interface_generator_140_v2xnp4q
-[+] twentynm_hps_interface_tpiu_trace 
+[+] twentynm_hps_interface_tpiu_trace
   Instantiated as:
   > peripheral_trace in hps_platform_altera_arria10_interface_generator_140_v2xnp4q
-[+] twentynm_hps_peripheral_emac 
+[+] twentynm_hps_peripheral_emac
   Instantiated as:
   > phery_emac0 in hps_platform_altera_arria10_interface_generator_140_d2sltni
   > phery_emac1 in hps_platform_altera_arria10_interface_generator_140_d2sltni
-[+] twentynm_hps_peripheral_gpio 
+[+] twentynm_hps_peripheral_gpio
   Instantiated as:
   > gpio in hps_platform_altera_arria10_interface_generator_140_r6bwoey
   > gpio in hps_platform_altera_arria10_interface_generator_140_d2sltni
-[+] twentynm_hps_peripheral_i2c 
+[+] twentynm_hps_peripheral_i2c
   Instantiated as:
   > phery_i2c1 in hps_platform_altera_arria10_interface_generator_140_d2sltni
-[+] twentynm_hps_peripheral_qspi 
+[+] twentynm_hps_peripheral_qspi
   Instantiated as:
   > phery_qspi in hps_platform_altera_arria10_interface_generator_140_d2sltni
-[+] twentynm_hps_peripheral_sdmmc 
+[+] twentynm_hps_peripheral_sdmmc
   Instantiated as:
   > phery_sdmmc in hps_platform_altera_arria10_interface_generator_140_r6bwoey
   > phery_sdmmc in hps_platform_altera_arria10_interface_generator_140_d2sltni
-[+] twentynm_hps_peripheral_spi_master 
+[+] twentynm_hps_peripheral_spi_master
   Instantiated as:
   > phery_spim0 in hps_platform_altera_arria10_interface_generator_140_r6bwoey
   > phery_spim1 in hps_platform_altera_arria10_interface_generator_140_r6bwoey
   > phery_spim0 in hps_platform_altera_arria10_interface_generator_140_d2sltni
   > phery_spim1 in hps_platform_altera_arria10_interface_generator_140_d2sltni
-[+] twentynm_hps_peripheral_spi_slave 
+[+] twentynm_hps_peripheral_spi_slave
   Instantiated as:
   > phery_spis0 in hps_platform_altera_arria10_interface_generator_140_r6bwoey
   > phery_spis0 in hps_platform_altera_arria10_interface_generator_140_d2sltni
-[+] twentynm_hps_peripheral_uart 
+[+] twentynm_hps_peripheral_uart
   Instantiated as:
   > phery_uart0 in hps_platform_altera_arria10_interface_generator_140_r6bwoey
   > phery_uart1 in hps_platform_altera_arria10_interface_generator_140_r6bwoey
   > phery_uart0 in hps_platform_altera_arria10_interface_generator_140_d2sltni
   > phery_uart1 in hps_platform_altera_arria10_interface_generator_140_d2sltni
-[+] twentynm_hps_rl_interface_fpga2hps 
+[+] twentynm_hps_rl_interface_fpga2hps
   Instantiated as:
   > fpga2hps in hps_platform_altera_arria10_interface_generator_140_v2xnp4q
   > fpga2hps in hps_platform_altera_arria10_interface_generator_140_vassg6i
-[+] twentynm_hps_rl_interface_hps2fpga 
+[+] twentynm_hps_rl_interface_hps2fpga
   Instantiated as:
   > hps2fpga in hps_platform_altera_arria10_interface_generator_140_v2xnp4q
   > hps2fpga in hps_platform_altera_arria10_interface_generator_140_vassg6i
-[+] twentynm_hps_rl_interface_hps2fpga_light_weight 
+[+] twentynm_hps_rl_interface_hps2fpga_light_weight
   Instantiated as:
   > hps2fpga_light_weight in hps_platform_altera_arria10_interface_generator_140_v2xnp4q
   > hps2fpga_light_weight in hps_platform_altera_arria10_interface_generator_140_vassg6i
-[+] twentynm_hps_rl_mode0_fpga2sdram 
+[+] twentynm_hps_rl_mode0_fpga2sdram
   Instantiated as:
   > f2sdram in hps_platform_altera_arria10_interface_generator_140_v2xnp4q
   > f2sdram in hps_platform_altera_arria10_interface_generator_140_vassg6i
@@ -3141,19 +3138,19 @@
   Instantiated as:
 [+] twentynm_hps_rl_mode3_fpga2sdram (top)
   Instantiated as:
-[+] twentynm_io_12_lane 
+[+] twentynm_io_12_lane
   Instantiated as:
   > lane_inst in altera_emif_arch_nf_io_tiles
   > lane_inst in altera_emif_arch_nf_io_tiles
-[+] twentynm_io_12_lane_abphy 
+[+] twentynm_io_12_lane_abphy
   Instantiated as:
   > lane_inst in altera_emif_arch_nf_io_tiles_abphy
   > lane_inst in altera_emif_arch_nf_io_tiles_abphy
-[+] twentynm_io_aux 
+[+] twentynm_io_aux
   Instantiated as:
   > io_aux in hps_platform_altera_emif_arch_nf_181_l74jv7y_io_aux
   > io_aux in hps_platform_altera_emif_arch_nf_180_zngiyoi_io_aux
-[+] twentynm_io_ibuf 
+[+] twentynm_io_ibuf
   Instantiated as:
   > ibuf in altera_emif_arch_nf_buf_bdir_df
   > ibuf in altera_emif_arch_nf_buf_bdir_df
@@ -3195,7 +3192,7 @@
   > ibuf in altera_gpio_one_bit
   > ibuf in altera_gpio_one_bit
   > ibuf in altera_gpio_one_bit
-[+] twentynm_io_obuf 
+[+] twentynm_io_obuf
   Instantiated as:
   > obuf in altera_emif_arch_nf_buf_bdir_df
   > obuf_bar in altera_emif_arch_nf_buf_bdir_df
@@ -3269,19 +3266,19 @@
   > obuf_0 in altera_gpio_one_bit
   > obuf in altera_gpio_one_bit
   > obuf in altera_gpio_one_bit
-[+] twentynm_iopll 
+[+] twentynm_iopll
   Instantiated as:
   > pll_inst in altera_emif_arch_nf_pll
   > pll_inst in altera_emif_arch_nf_pll
-[+] twentynm_jtagblock 
+[+] twentynm_jtagblock
   Instantiated as:
   > jtag in jtag
   > jtag in jtag
-[+] twentynm_lcell_comb 
+[+] twentynm_lcell_comb
   Instantiated as:
   > wireluta in alentar
   > wireluta in alentar
-[+] twentynm_pseudo_diff_out 
+[+] twentynm_pseudo_diff_out
   Instantiated as:
   > pdiff_out in altera_emif_arch_nf_buf_bdir_df
   > pdiff_out in altera_emif_arch_nf_buf_bdir_df
@@ -3297,32 +3294,32 @@
   > pseudo_diff_out in altera_gpio_one_bit
   > pseudo_diff_out in altera_gpio_one_bit
   > pseudo_diff_out in altera_gpio_one_bit
-[+] twentynm_termination 
+[+] twentynm_termination
   Instantiated as:
   > termination_inst in altera_emif_arch_nf_oct
   > sd1a_i in altera_oct
   > termination_inst in altera_emif_arch_nf_oct
   > sd1a_i in altera_oct
-[+] twentynm_termination_logic 
+[+] twentynm_termination_logic
   Instantiated as:
   > termination_logic_inst in altera_emif_arch_nf_oct
   > sd2a_i in altera_oct
   > termination_logic_inst in altera_emif_arch_nf_oct
   > sd2a_i in altera_oct
-[+] twentynm_tile_ctrl 
+[+] twentynm_tile_ctrl
   Instantiated as:
   > tile_ctrl_inst in altera_emif_arch_nf_io_tiles
   > tile_ctrl_inst in altera_emif_arch_nf_io_tiles_abphy
   > tile_ctrl_inst in altera_emif_arch_nf_io_tiles
   > tile_ctrl_inst in altera_emif_arch_nf_io_tiles_abphy
-[+] twentynm_tsdblock 
+[+] twentynm_tsdblock
   Instantiated as:
   > sd1 in altera_temp_sense
   > sd1 in altera_temp_sense
-[+] twentynm_vsblock 
+[+] twentynm_vsblock
   Instantiated as:
   > vs_block in voltage_sensor_wrapper
-[+] tx_trigger 
+[+] tx_trigger
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -3333,26 +3330,26 @@
     |-> time_trigger_1: time_trigger  (rtl)
   Instantiated as:
   > tx_trigger_1 in xpdr_source_top (rtl)
-[+] uat_decoder 
+[+] uat_decoder
   Architectures:
   {+} arch
     Subcomponent hierarchy:
   Instantiated as:
   > DECODE in fsk_demod_top (rtl)
   > DECODE in uat_rx_demod (rtl)
-[+] uat_gps_beh_model 
+[+] uat_gps_beh_model
   Architectures:
   {+} behavioral
     Subcomponent hierarchy:
   Instantiated as:
   > uat_gps_time_ctrl_1 in uat_tx_tb (behavioral)
-[+] uat_gps_time_ctrl 
+[+] uat_gps_time_ctrl
   Architectures:
   {+} arch
     Subcomponent hierarchy:
   Instantiated as:
   > uat_gps_time_ctrl_1 in uat_top (rtl)
-[+] uat_mem_block 
+[+] uat_mem_block
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -3364,7 +3361,7 @@
   > uat_txgnd_0 in uat_ppc_if (rtl)
   > uat_txgnd_1 in uat_ppc_if (rtl)
   > uat_rx_data_1 in uat_ppc_if (rtl)
-[+] uat_ppc_if 
+[+] uat_ppc_if
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -3379,7 +3376,7 @@
   > uat_ppc_if_1 in uat_rx_ctrl_tb (behavioral)
   > uat_ppc_if_1 in uat_top (rtl)
   > DUT in uat_tx_tb (behavioral)
-[+] uat_rx_ctrl 
+[+] uat_rx_ctrl
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -3392,7 +3389,7 @@
     Subcomponent hierarchy:
     |-> DUT: uat_rx_ctrl  (rtl)
     |-> uat_ppc_if_1: uat_ppc_if  (rtl)
-    |-> elbc_gpcm_if_1: elbc_gpcm_if 
+    |-> elbc_gpcm_if_1: elbc_gpcm_if
   Instantiated as:
 [+] uat_rx_demod (top)
   Architectures:
@@ -3423,14 +3420,14 @@
     |-> data_lut_1: data_lut  (arch) (arch) (sim)
     |-> gain_stage_1: gain_stage  (arch)
   Instantiated as:
-[+] uat_tx_ctrl 
+[+] uat_tx_ctrl
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
   Instantiated as:
   > uat_tx_ctrl_1 in uat_top (rtl)
   > uat_tx_ctrl_1 in uat_tx_tb (behavioral)
-[+] uat_tx_mod 
+[+] uat_tx_mod
   Architectures:
   {+} arch
     Subcomponent hierarchy:
@@ -3442,7 +3439,7 @@
   Architectures:
   {+} behavioral
     Subcomponent hierarchy:
-    |-> elbc_gpcm_if_1: elbc_gpcm_if 
+    |-> elbc_gpcm_if_1: elbc_gpcm_if
     |-> DUT: uat_ppc_if  (rtl)
     |-> uat_tx_ctrl_1: uat_tx_ctrl  (rtl)
     |-> uat_gps_time_ctrl_1: uat_gps_beh_model  (behavioral)
@@ -3456,7 +3453,7 @@
     Subcomponent hierarchy:
     |-> MODULATOR: uat_tx_mod  (arch)
   Instantiated as:
-[+] upconverter 
+[+] upconverter
   Architectures:
   {+} arch
     Subcomponent hierarchy:
@@ -3470,19 +3467,19 @@
     Subcomponent hierarchy:
     |-> DUT: upconverter  (arch)
   Instantiated as:
-[+] vector_cordic 
+[+] vector_cordic
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
   Instantiated as:
   > CORDIC_2 in rx_dsp_top_lf (rtl)
-[+] voltage_sensor_avalon_control 
+[+] voltage_sensor_avalon_control
   Instantiated as:
   > vs_controller in altera_voltage_sensor_control
-[+] voltage_sensor_wrapper 
+[+] voltage_sensor_wrapper
   Instantiated as:
   > voltage_block in altera_voltage_sensor_control
-[+] vor_gen 
+[+] vor_gen
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
@@ -3502,10 +3499,10 @@
     Subcomponent hierarchy:
     |-> DUT: vor_gen  (rtl)
   Instantiated as:
-[+] wrapped_digitaldelay 
+[+] wrapped_digitaldelay
   Instantiated as:
   > U0 in digitaldelay (digitaldelay_a)
-[+] xpdr_source_top 
+[+] xpdr_source_top
   Architectures:
   {+} rtl
     Subcomponent hierarchy:
