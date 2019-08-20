@@ -580,7 +580,7 @@ class EntityTreeItem:
 
 
 entity_tree = {}
-logstr("Starting file scan.", True)
+logstr("Starting file scan.", False)
 for root, dirs, files in os.walk("."):
     for file in files:
         # Filter out files.  We don't want instantiation template files (_inst)
@@ -667,7 +667,7 @@ for root, dirs, files in os.walk("."):
                     # File is likely obfuscated binary
                     pass
 
-logstr("Completed file scan.\n", True)
+logstr("Completed file scan.\n", False)
 for name in sorted(entity_tree):
     topstr = ""
     if not entity_tree[name].instances:
